@@ -1,22 +1,27 @@
 ﻿using AI.FSM;
+using Entity.Attack;
 using Entity.Health;
 using Entity.Movement;
 using UnityEngine;
 
 namespace Entity
 {
-    public class Character : NetworkDamageable, ITransformable
+    public class Character : NetworkDamageable, ITarget
     {
+        [field: SerializeField] public TeamId TeamId { get; private set; }
+
         public Vector2 Position { get => transform.position; set => transform.position = value; }
         public Vector2 Rotation { get; set; } = Vector2.right;
 
         public IMovement Movement { get; private set; }
         public IStateMachine StateMachine {get; private set; }
+        public AttackBehaviour AttackBehaviour { get; private set; }
 
-        public void Initialize(IMovement movement, IStateMachine stateMachine, int maxHealth)
+        public void Initialize(IMovement movement, IStateMachine stateMachine, AttackBehaviour attackBehaviour, int maxHealth)
         {
             Movement = movement;
             StateMachine = stateMachine;
+            AttackBehaviour = attackBehaviour;
 
             Health = maxHealth;
             MaxHealth = maxHealth;

@@ -195,6 +195,15 @@ public partial class @PlayerInput: IInputActionCollection2, IDisposable
                     ""processors"": """",
                     ""interactions"": """",
                     ""initialStateCheck"": false
+                },
+                {
+                    ""name"": ""Shoot"",
+                    ""type"": ""Button"",
+                    ""id"": ""946f6eee-2ca8-4375-9df3-911c4816f44a"",
+                    ""expectedControlType"": ""Button"",
+                    ""processors"": """",
+                    ""interactions"": """",
+                    ""initialStateCheck"": false
                 }
             ],
             ""bindings"": [
@@ -206,6 +215,17 @@ public partial class @PlayerInput: IInputActionCollection2, IDisposable
                     ""processors"": """",
                     ""groups"": ""Character"",
                     ""action"": ""Reload"",
+                    ""isComposite"": false,
+                    ""isPartOfComposite"": false
+                },
+                {
+                    ""name"": """",
+                    ""id"": ""4298c0f9-f1b3-4ec2-8779-c0670be01aa8"",
+                    ""path"": ""<Mouse>/leftButton"",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": """",
+                    ""action"": ""Shoot"",
                     ""isComposite"": false,
                     ""isPartOfComposite"": false
                 }
@@ -232,6 +252,7 @@ public partial class @PlayerInput: IInputActionCollection2, IDisposable
         // Character Battle Mode
         m_CharacterBattleMode = asset.FindActionMap("Character Battle Mode", throwIfNotFound: true);
         m_CharacterBattleMode_Reload = m_CharacterBattleMode.FindAction("Reload", throwIfNotFound: true);
+        m_CharacterBattleMode_Shoot = m_CharacterBattleMode.FindAction("Shoot", throwIfNotFound: true);
     }
 
     public void Dispose()
@@ -410,11 +431,13 @@ public partial class @PlayerInput: IInputActionCollection2, IDisposable
     private readonly InputActionMap m_CharacterBattleMode;
     private List<ICharacterBattleModeActions> m_CharacterBattleModeActionsCallbackInterfaces = new List<ICharacterBattleModeActions>();
     private readonly InputAction m_CharacterBattleMode_Reload;
+    private readonly InputAction m_CharacterBattleMode_Shoot;
     public struct CharacterBattleModeActions
     {
         private @PlayerInput m_Wrapper;
         public CharacterBattleModeActions(@PlayerInput wrapper) { m_Wrapper = wrapper; }
         public InputAction @Reload => m_Wrapper.m_CharacterBattleMode_Reload;
+        public InputAction @Shoot => m_Wrapper.m_CharacterBattleMode_Shoot;
         public InputActionMap Get() { return m_Wrapper.m_CharacterBattleMode; }
         public void Enable() { Get().Enable(); }
         public void Disable() { Get().Disable(); }
@@ -427,6 +450,9 @@ public partial class @PlayerInput: IInputActionCollection2, IDisposable
             @Reload.started += instance.OnReload;
             @Reload.performed += instance.OnReload;
             @Reload.canceled += instance.OnReload;
+            @Shoot.started += instance.OnShoot;
+            @Shoot.performed += instance.OnShoot;
+            @Shoot.canceled += instance.OnShoot;
         }
 
         private void UnregisterCallbacks(ICharacterBattleModeActions instance)
@@ -434,6 +460,9 @@ public partial class @PlayerInput: IInputActionCollection2, IDisposable
             @Reload.started -= instance.OnReload;
             @Reload.performed -= instance.OnReload;
             @Reload.canceled -= instance.OnReload;
+            @Shoot.started -= instance.OnShoot;
+            @Shoot.performed -= instance.OnShoot;
+            @Shoot.canceled -= instance.OnShoot;
         }
 
         public void RemoveCallbacks(ICharacterBattleModeActions instance)
@@ -474,5 +503,6 @@ public partial class @PlayerInput: IInputActionCollection2, IDisposable
     public interface ICharacterBattleModeActions
     {
         void OnReload(InputAction.CallbackContext context);
+        void OnShoot(InputAction.CallbackContext context);
     }
 }

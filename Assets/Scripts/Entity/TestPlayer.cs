@@ -36,7 +36,7 @@ namespace Entity
             var movement = new CharacterMovement(_playerCharacter, _speed);
             var stateMachine = CreateStateMachine();
 
-            _playerCharacter.Initialize(movement, stateMachine, _maxHealth);
+            //_playerCharacter.Initialize(movement, stateMachine, _maxHealth);
         }
 
         private IStateMachine CreateStateMachine()

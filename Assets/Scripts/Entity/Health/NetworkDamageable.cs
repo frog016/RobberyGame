@@ -24,6 +24,11 @@ namespace Entity.Health
             DestroyDamageable();
         }
 
+        public bool IsAlive()
+        {
+            return Health > 0;
+        }
+
         protected virtual void DestroyDamageable() { }
     }
 }

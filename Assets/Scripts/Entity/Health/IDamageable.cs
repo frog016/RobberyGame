@@ -9,5 +9,6 @@ namespace Entity.Health
         event Action<int> HealthChanged;
 
         void ApplyDamage(int amount);
+        bool IsAlive();
     }
 }
