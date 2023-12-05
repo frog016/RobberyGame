@@ -14,12 +14,14 @@ namespace Entity.Attack
         private TeamId _teamId;
         private int _damage;
 
-        public void Launch(Vector2 destination, TeamId teamId, int damage)
+        public void Launch(Vector2 direction, TeamId teamId, int damage)
         {
             _teamId = teamId;
             _damage = damage;
 
+            var destination = GetEstimationDestination(direction);
             StartCoroutine(MoveAlongTrajectoryCoroutine(destination));
+            StartCoroutine(DisposeAfterLifeTimeCoroutine());
         }
 
         public void Dispose()
@@ -30,9 +32,26 @@ namespace Entity.Attack
         protected override void OnServerTriggerEnter2D(Collider2D other)
         {
             if (other.TryGetComponent<ITarget>(out var target) && target.TeamId != _teamId && target.IsAlive())
+            {
                 target.ApplyDamage(_damage);
+                Dispose();
+            }
+        }
 
-            Dispose();
+        private Vector2 GetEstimationDestination(Vector2 direction)
+        {
+            const float startTime = 0f;
+            const float endTime = 1f;
+
+            var startPointHeight = Vector2.up * _trajectory.Evaluate(startTime);
+            var endPointHeight = Vector2.up * _trajectory.Evaluate(endTime);
+
+            var estimationDistance = _flySpeed * LifeTime; 
+
+            var startPoint = (Vector2)transform.position + startPointHeight;
+            var endPoint = startPoint + direction * estimationDistance + endPointHeight;
+
+            return endPoint;
         }
 
         private IEnumerator MoveAlongTrajectoryCoroutine(Vector2 destination)
@@ -54,6 +73,12 @@ namespace Entity.Attack
 
                 yield return new WaitForFixedUpdate();
             }
+        }
+
+        private IEnumerator DisposeAfterLifeTimeCoroutine()
+        {
+            yield return new WaitForSeconds(LifeTime);
+            Dispose();
         }
     }
 }

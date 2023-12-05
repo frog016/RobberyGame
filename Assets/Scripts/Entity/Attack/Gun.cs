@@ -35,6 +35,11 @@ namespace Entity.Attack
             ShootAsync(direction).Forget();
         }
 
+        public void Reload()
+        {
+            Debug.Log("Reload not implemented yet.");
+        }
+
         private async UniTaskVoid ShootAsync(Vector2 direction)
         {
             Cooldown.Restart();
@@ -42,7 +47,7 @@ namespace Entity.Attack
             for (var i = 0; i < _bulletLaunchCount; i++)
             {
                 var bullet = _magazine.GetBullet();
-                var shootDirection = direction + GetSpreadDirection();
+                var shootDirection = (direction + GetSpreadDirection()).normalized;
 
                 bullet.Launch(shootDirection, _teamId, _damage);
 

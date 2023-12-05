@@ -3,6 +3,7 @@ using AI.States;
 using AI.Transitions;
 using Entity.Movement;
 using System.Collections.Generic;
+using Entity.Attack;
 using Unity.Netcode;
 using UnityEngine;
 
@@ -10,6 +11,7 @@ namespace Entity
 {
     public class TestPlayer : NetworkBehaviour
     {
+        [Header("Character Configuration")]
         [SerializeField] private Character _playerCharacter;
         [SerializeField] private int _maxHealth;
         [SerializeField] private float _speed;
@@ -17,6 +19,18 @@ namespace Entity
         [SerializeField] private float _chargeDuration;
         [SerializeField] private float _squatSpeed;
         [SerializeField] private float _reloadDuration;
+
+        [Header("Gun Configuration")]
+        [SerializeField] private float _shootCooldown;
+        [SerializeField] private Projectile _projectilePrefab;
+        [SerializeField] private Transform _muzzle;
+        [SerializeField] private int _shootDamage;
+        [SerializeField] private int _bulletLaunchCount;
+        [SerializeField] private float _bulletLaunchDelay;
+        [SerializeField] private float _shootSpread;
+
+        [Header("Links")]
+        [SerializeField] private Camera _camera;
 
         private PlayerInput _playerInput;
 
@@ -28,6 +42,8 @@ namespace Entity
             _playerInput = new PlayerInput();
             _playerInput.Enable();
 
+            _camera = Camera.main;
+
             Initialize();
         }
 
@@ -35,8 +51,9 @@ namespace Entity
         {
             var movement = new CharacterMovement(_playerCharacter, _speed);
             var stateMachine = CreateStateMachine();
+            var attackBehaviour = new AttackBehaviour(CreateGun(_playerCharacter));
 
-            //_playerCharacter.Initialize(movement, stateMachine, _maxHealth);
+            _playerCharacter.Initialize(movement, stateMachine, attackBehaviour, _maxHealth);
         }
 
         private IStateMachine CreateStateMachine()
@@ -56,6 +73,7 @@ namespace Entity
             yield return new SquatState(character, squatSpeed);
             yield return new BattleModeState(character);
             yield return new ReloadState(character, reloadDuration);
+            yield return new ShootState(character);
             yield return new InteractState(character);
         }
 
@@ -68,7 +86,7 @@ namespace Entity
             yield return new Transition(null, typeof(ReloadState), reloadInputCondition);
         }
 
-        private static IEnumerable<Transition> CreateTransitions(Character character, PlayerInput input)
+        private IEnumerable<Transition> CreateTransitions(Character character, PlayerInput input)
         {
             var launchEndedCondition = new StateEndedCondition<BattleModeState>(character);
             yield return new Transition(typeof(BattleModeState), typeof(IdleState), launchEndedCondition);
@@ -97,6 +115,23 @@ namespace Entity
 
             var interactionEndedCondition = new StateEndedCondition<InteractState>(character);
             yield return new Transition(typeof(InteractState), typeof(IdleState), interactionEndedCondition);
+
+            var shootInputCondition = new HaveShootInputCondition(character, input, _camera);
+            yield return new Transition(typeof(IdleState), typeof(ShootState), shootInputCondition);
+            yield return new Transition(typeof(SquatState), typeof(ShootState), shootInputCondition);
+            yield return new Transition(typeof(WalkState), typeof(ShootState), shootInputCondition);
+            yield return new Transition(typeof(ShootState), typeof(IdleState), shootInputCondition, true);
+        }
+
+        private Gun CreateGun(Character character)
+        {
+            var cooldown = new Cooldown(_shootCooldown, character.destroyCancellationToken);
+            var magazine = new Magazine(_projectilePrefab, _muzzle);
+
+            var gun = new Gun(cooldown, magazine);
+            gun.Initialize(_shootDamage, _bulletLaunchCount, _bulletLaunchDelay, _shootSpread, character.TeamId);
+
+            return gun;
         }
     }
 }

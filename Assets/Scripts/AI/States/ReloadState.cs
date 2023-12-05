@@ -18,7 +18,7 @@ namespace AI.States
             Ended = _timer.Tick(Time.deltaTime);
 
             if (Ended)
-                Debug.Log("Reloaded");
+                Context.AttackBehaviour.Gun.Reload();
         }
 
         public void Exit()
