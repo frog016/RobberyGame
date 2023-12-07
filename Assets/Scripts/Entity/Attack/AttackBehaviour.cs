@@ -4,9 +4,9 @@ namespace Entity.Attack
 {
     public class AttackBehaviour
     {
-        public readonly Gun Gun;
+        public Gun Gun;
 
-        public AttackBehaviour(Gun gun)
+        public void Initialize(Gun gun)
         {
             Gun = gun;
         }

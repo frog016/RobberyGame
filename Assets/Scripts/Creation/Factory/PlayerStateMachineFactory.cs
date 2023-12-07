@@ -1,78 +1,44 @@
-﻿using AI.FSM;
+﻿using System.Collections.Generic;
+using AI.FSM;
 using AI.States;
 using AI.Transitions;
-using Entity.Movement;
-using System.Collections.Generic;
+using Config;
+using Entity;
 using Entity.Attack;
-using Unity.Netcode;
 using UnityEngine;
 
-namespace Entity
+namespace Creation.Factory
 {
-    public class TestPlayer : NetworkBehaviour
+    public class PlayerStateMachineFactory : ICharacterStateMachineFactory
     {
-        [Header("Character Configuration")]
-        [SerializeField] private Character _playerCharacter;
-        [SerializeField] private int _maxHealth;
-        [SerializeField] private float _speed;
-        [SerializeField] private float _chargeSpeed;
-        [SerializeField] private float _chargeDuration;
-        [SerializeField] private float _squatSpeed;
-        [SerializeField] private float _reloadDuration;
+        public TeamId CharacterTeamId => TeamId.Player;
 
-        [Header("Gun Configuration")]
-        [SerializeField] private float _shootCooldown;
-        [SerializeField] private Projectile _projectilePrefab;
-        [SerializeField] private Transform _muzzle;
-        [SerializeField] private int _shootDamage;
-        [SerializeField] private int _bulletLaunchCount;
-        [SerializeField] private float _bulletLaunchDelay;
-        [SerializeField] private float _shootSpread;
+        private readonly PlayerInput _playerInput;
+        private readonly Camera _playerCamera;
 
-        [Header("Links")]
-        [SerializeField] private Camera _camera;
-
-        private PlayerInput _playerInput;
-
-        public override void OnNetworkSpawn()
+        public PlayerStateMachineFactory(PlayerInput playerInput, Camera playerCamera)
         {
-            if (IsLocalPlayer == false)
-                return;
-
-            _playerInput = new PlayerInput();
-            _playerInput.Enable();
-
-            _camera = Camera.main;
-
-            Initialize();
+            _playerInput = playerInput;
+            _playerCamera = playerCamera;
         }
 
-        private void Initialize()
+        public IStateMachine CreateStateMachine(Character context, CharacterConfig config)
         {
-            var movement = new CharacterMovement(_playerCharacter, _speed);
-            var stateMachine = CreateStateMachine();
-            var attackBehaviour = new AttackBehaviour(CreateGun(_playerCharacter));
-
-            _playerCharacter.Initialize(movement, stateMachine, attackBehaviour, _maxHealth);
-        }
-
-        private IStateMachine CreateStateMachine()
-        {
-            var states = CreateStates(_playerCharacter, _chargeSpeed, _chargeDuration, _squatSpeed, _reloadDuration);
-            var anyTransitions = CreateAnyTransitions(_playerCharacter, _playerInput);
-            var transitions = CreateTransitions(_playerCharacter, _playerInput);
+            var states = CreateStates(context, config);
+            var anyTransitions = CreateAnyTransitions(context, _playerInput);
+            var transitions = CreateTransitions(context, _playerInput, _playerCamera);
 
             return new TransitionStateMachine(states, anyTransitions, transitions);
         }
 
-        private static IEnumerable<IState> CreateStates(Character character, float chargeSpeed, float chargeDuration, float squatSpeed, float reloadDuration)
+        private static IEnumerable<IState> CreateStates(Character character, CharacterConfig config)
         {
             yield return new IdleState();
             yield return new WalkState(character);
-            yield return new ChargeState(character, chargeSpeed, chargeDuration);
-            yield return new SquatState(character, squatSpeed);
+            yield return new ChargeState(character, config.ChargeSpeed, config.ChargeDuration);
+            yield return new SquatState(character, config.SquatSpeed);
             yield return new BattleModeState(character);
-            yield return new ReloadState(character, reloadDuration);
+            yield return new ReloadState(character, config.ReloadDuration);
             yield return new ShootState(character);
             yield return new InteractState(character);
         }
@@ -86,7 +52,7 @@ namespace Entity
             yield return new Transition(null, typeof(ReloadState), reloadInputCondition);
         }
 
-        private IEnumerable<Transition> CreateTransitions(Character character, PlayerInput input)
+        private static IEnumerable<Transition> CreateTransitions(Character character, PlayerInput input, Camera camera)
         {
             var launchEndedCondition = new StateEndedCondition<BattleModeState>(character);
             yield return new Transition(typeof(BattleModeState), typeof(IdleState), launchEndedCondition);
@@ -116,22 +82,11 @@ namespace Entity
             var interactionEndedCondition = new StateEndedCondition<InteractState>(character);
             yield return new Transition(typeof(InteractState), typeof(IdleState), interactionEndedCondition);
 
-            var shootInputCondition = new HaveShootInputCondition(character, input, _camera);
+            var shootInputCondition = new HaveShootInputCondition(character, input, camera);
             yield return new Transition(typeof(IdleState), typeof(ShootState), shootInputCondition);
             yield return new Transition(typeof(SquatState), typeof(ShootState), shootInputCondition);
             yield return new Transition(typeof(WalkState), typeof(ShootState), shootInputCondition);
             yield return new Transition(typeof(ShootState), typeof(IdleState), shootInputCondition, true);
-        }
-
-        private Gun CreateGun(Character character)
-        {
-            var cooldown = new Cooldown(_shootCooldown, character.destroyCancellationToken);
-            var magazine = new Magazine(_projectilePrefab, _muzzle);
-
-            var gun = new Gun(cooldown, magazine);
-            gun.Initialize(_shootDamage, _bulletLaunchCount, _bulletLaunchDelay, _shootSpread, character.TeamId);
-
-            return gun;
         }
     }
 }

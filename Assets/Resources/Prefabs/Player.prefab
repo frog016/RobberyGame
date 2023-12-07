@@ -43,7 +43,6 @@ GameObject:
   - component: {fileID: 7112101451015256140}
   - component: {fileID: -9020170567672076434}
   - component: {fileID: 317579919026051860}
-  - component: {fileID: 6792861950632802709}
   - component: {fileID: 6936749787165047913}
   - component: {fileID: 302084064097062427}
   m_Layer: 0
@@ -133,33 +132,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   <TeamId>k__BackingField: 0
---- !u!114 &6792861950632802709
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 6602168825426361733}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 11f5370089bd942459139d35cd31febd, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  _playerCharacter: {fileID: 317579919026051860}
-  _maxHealth: 100
-  _speed: 5
-  _chargeSpeed: 25
-  _chargeDuration: 0.25
-  _squatSpeed: 2
-  _reloadDuration: 2
-  _shootCooldown: 0.1
-  _projectilePrefab: {fileID: 8298602286054986664, guid: ab4c20c69a88ecc43bc6d59dcd7619cc, type: 3}
-  _muzzle: {fileID: 6976964570669893885}
-  _shootDamage: 10
-  _bulletLaunchCount: 3
-  _bulletLaunchDelay: 0.01
-  _shootSpread: 0.2
-  _camera: {fileID: 0}
+  <Muzzle>k__BackingField: {fileID: 6976964570669893885}
 --- !u!50 &6936749787165047913
 Rigidbody2D:
   serializedVersion: 4

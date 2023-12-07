@@ -55,6 +55,7 @@ namespace Creation.Pool
         {
             var projectile = _factory.CreateForComponent(_prefab);
             projectile.Initialize(this);
+            projectile.NetworkObject.Spawn(true);
 
             return projectile;
         }

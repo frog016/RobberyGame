@@ -1,24 +1,46 @@
-﻿using UnityEngine;
+﻿using System;
+using Creation.Pool;
+using UnityEngine;
 
 namespace Entity.Attack
 {
     public class Magazine
     {
-        private readonly Projectile _bulletPrefab;
+        public int Capacity { get; private set; }
+        public int RemainingCount { get; private set; }
+
+        private readonly ProjectilePool _bulletPool;
         private readonly Transform _muzzle;
 
-        public Magazine(Projectile bulletPrefab, Transform muzzle)
+        public Magazine(ProjectilePool bulletPool, Transform muzzle, int capacity)
         {
-            _bulletPrefab = bulletPrefab;
+            _bulletPool = bulletPool;
             _muzzle = muzzle;
+            Capacity = capacity;
+
+            Reload();
         }
 
         public Projectile GetBullet()
         {
-            var instance = Object.Instantiate(_bulletPrefab, _muzzle.position, _muzzle.rotation);
-            instance.NetworkObject.Spawn(true);
+            if (IsNotEmpty() == false)
+                throw new InvalidOperationException("Impossible to take a bullet from empty magazine. Need to reload.");
 
-            return instance;
+            var bullet = _bulletPool.Get();
+            bullet.transform.SetPositionAndRotation(_muzzle.position, _muzzle.localRotation);
+
+            RemainingCount--;
+            return bullet;
+        }
+
+        public void Reload()
+        {
+            RemainingCount = Capacity;
+        }
+
+        public bool IsNotEmpty()
+        {
+            return RemainingCount > 0;
         }
     }
 }
