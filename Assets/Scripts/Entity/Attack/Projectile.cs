@@ -1,10 +1,10 @@
-﻿using Structure.Netcode;
+﻿using Creation.Pool;
 using System.Collections;
 using UnityEngine;
 
 namespace Entity.Attack
 {
-    public class Projectile : ServerBehaviour
+    public class Projectile : PoolElement<Projectile>
     {
         [field: SerializeField] public float LifeTime { get; private set; }
 
@@ -21,12 +21,17 @@ namespace Entity.Attack
 
             var destination = GetEstimationDestination(direction);
             StartCoroutine(MoveAlongTrajectoryCoroutine(destination));
+        }
+
+        public override void OnPoolGet()
+        {
+            gameObject.SetActive(true);
             StartCoroutine(DisposeAfterLifeTimeCoroutine());
         }
 
-        public void Dispose()
+        public override void OnPoolRelease()
         {
-            NetworkObject.Despawn();
+            gameObject.SetActive(false);
         }
 
         protected override void OnServerTriggerEnter2D(Collider2D other)
@@ -34,7 +39,7 @@ namespace Entity.Attack
             if (other.TryGetComponent<ITarget>(out var target) && target.TeamId != _teamId && target.IsAlive())
             {
                 target.ApplyDamage(_damage);
-                Dispose();
+                Pool.Release(this);
             }
         }
 
@@ -46,7 +51,7 @@ namespace Entity.Attack
             var startPointHeight = Vector2.up * _trajectory.Evaluate(startTime);
             var endPointHeight = Vector2.up * _trajectory.Evaluate(endTime);
 
-            var estimationDistance = _flySpeed * LifeTime; 
+            var estimationDistance = _flySpeed * LifeTime;
 
             var startPoint = (Vector2)transform.position + startPointHeight;
             var endPoint = startPoint + direction * estimationDistance + endPointHeight;
@@ -78,7 +83,7 @@ namespace Entity.Attack
         private IEnumerator DisposeAfterLifeTimeCoroutine()
         {
             yield return new WaitForSeconds(LifeTime);
-            Dispose();
+            Pool.Release(this);
         }
     }
 }
