@@ -16,5 +16,6 @@ namespace Config
         [field: Header("State Duration")]
         [field: SerializeField] public float ChargeDuration { get; private set; }
         [field: SerializeField] public float ReloadDuration { get; private set; }
+        [field: SerializeField] public float InteractDuration { get; private set; }
     }
 }

@@ -40,7 +40,7 @@ namespace Creation.Factory
             yield return new BattleModeState(character);
             yield return new ReloadState(character, config.ReloadDuration);
             yield return new ShootState(character);
-            yield return new InteractState(character);
+            yield return new InteractState(character, config.InteractDuration);
         }
 
         private static IEnumerable<Transition> CreateAnyTransitions(Character character, PlayerInput input)

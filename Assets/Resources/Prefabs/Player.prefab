@@ -43,6 +43,7 @@ GameObject:
   - component: {fileID: 7112101451015256140}
   - component: {fileID: -9020170567672076434}
   - component: {fileID: 317579919026051860}
+  - component: {fileID: 4414512891894547392}
   - component: {fileID: 6936749787165047913}
   - component: {fileID: 302084064097062427}
   m_Layer: 0
@@ -133,6 +134,19 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   <TeamId>k__BackingField: 0
   <Muzzle>k__BackingField: {fileID: 6976964570669893885}
+--- !u!114 &4414512891894547392
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6602168825426361733}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5e1b682a131ac5f4bb8ef9566d63d3de, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _character: {fileID: 317579919026051860}
 --- !u!50 &6936749787165047913
 Rigidbody2D:
   serializedVersion: 4
@@ -148,7 +162,7 @@ Rigidbody2D:
   m_Mass: 1
   m_LinearDrag: 0
   m_AngularDrag: 0.05
-  m_GravityScale: 1
+  m_GravityScale: 0
   m_Material: {fileID: 0}
   m_IncludeLayers:
     serializedVersion: 2
@@ -267,7 +281,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 0
+  m_SortingOrder: 2
   m_Sprite: {fileID: -9095717837082945937, guid: 207ee8102dd4143d288186ef0be518ee, type: 3}
   m_Color: {r: 0.6590825, g: 1, b: 0.5990566, a: 1}
   m_FlipX: 0
