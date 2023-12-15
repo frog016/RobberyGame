@@ -17,6 +17,7 @@ namespace Interactable
                 return;
 
             interact.AddInteractable(this);
+            OnCharacterTriggerEnter(interact.Character);
         }
 
         protected override void OnServerTriggerExit2D(Collider2D other)
@@ -25,6 +26,10 @@ namespace Interactable
                 return;
 
             interact.RemoveInteractable(this);
+            OnCharacterTriggerExit(interact.Character);
         }
+
+        protected virtual void OnCharacterTriggerEnter(Character character) { }
+        protected virtual void OnCharacterTriggerExit(Character character) { }
     }
 }

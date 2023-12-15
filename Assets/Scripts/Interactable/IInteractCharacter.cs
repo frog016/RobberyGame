@@ -1,7 +1,10 @@
-﻿namespace Interactable
+﻿using Entity;
+
+namespace Interactable
 {
     public interface IInteractCharacter
     {
+        Character Character { get; }
         void Interact();
         bool CanInteract();
 

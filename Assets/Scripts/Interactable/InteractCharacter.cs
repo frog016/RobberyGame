@@ -1,16 +1,16 @@
-﻿using System;
+﻿using Entity;
+using Structure.Netcode;
+using System;
 using System.Collections.Generic;
 using System.Linq;
-using Entity;
-using Structure.Netcode;
 using UnityEngine;
 
 namespace Interactable
 {
     public class InteractCharacter : ServerBehaviour, IInteractCharacter
     {
-        [SerializeField] private Character _character;
-        
+        [field: SerializeField] public Character Character { get; private set; }
+
         private readonly List<IInteractable> _availableInteractable = new();
 
         public void Interact()
@@ -19,10 +19,10 @@ namespace Interactable
                 throw new InvalidOperationException("You cannot interact with emptiness. There are no objects nearby.");
 
             var nearestInteractable = _availableInteractable
-                .OrderBy(interactable => Vector2.Distance(_character.Position, interactable.Position))
+                .OrderBy(interactable => Vector2.Distance(Character.Position, interactable.Position))
                 .First();
 
-            nearestInteractable.Interact(_character);
+            nearestInteractable.Interact(Character);
         }
 
         public bool CanInteract()
