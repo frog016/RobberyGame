@@ -33,5 +33,10 @@ namespace Entity
             StateMachine.Update();
             Debug.Log($"Character [{name}{OwnerClientId}] current state is {StateMachine.Current}.");
         }
+
+        protected override void DestroyDamageable()
+        {
+            NetworkObject.Despawn();
+        }
     }
 }

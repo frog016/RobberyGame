@@ -1,6 +1,7 @@
 ﻿using System.Collections.Generic;
 using Entity;
 using Entity.Attack;
+using Entity.Movement;
 using Interactable.Electricity;
 using UnityEngine;
 

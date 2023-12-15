@@ -1,5 +1,6 @@
 ﻿using System.Collections.Generic;
 using System.Linq;
+using AI.States.NPC;
 using Config;
 using Entity;
 using Entity.Attack;
@@ -28,12 +29,21 @@ namespace Creation.Factory
             return playerCharacter;
         }
 
-        private void InitializeCharacter(Character character, CharacterConfig config)
+        public Character CreatePolice(ulong clientId, Character prefab, CharacterConfig config, PatrolWay way)
+        {
+            var policeCharacter = _factory.CreateForComponent(prefab);
+            InitializeCharacter(policeCharacter, config, way.GetPatrolWayPoints());
+
+            policeCharacter.NetworkObject.SpawnAsPlayerObject(clientId);
+            return policeCharacter;
+        }
+
+        private void InitializeCharacter(Character character, CharacterConfig config, object extraArgument = null)
         {
             var movement = new CharacterMovement(character, config.Speed);
 
             var stateMachineFactory = _characterStateMachineFactories[character.TeamId];
-            var stateMachine = stateMachineFactory.CreateStateMachine(character, config);
+            var stateMachine = stateMachineFactory.CreateStateMachine(character, config, extraArgument);
 
             var attackBehaviour = new AttackBehaviour();
 

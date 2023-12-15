@@ -1,4 +1,5 @@
-﻿using Config;
+﻿using AI.States.NPC;
+using Config;
 using Creation.Factory;
 using Creation.Pool;
 using Entity;
@@ -7,14 +8,13 @@ using UnityEngine;
 
 namespace Creation.Spawn
 {
-    public class PlayerSpawnPoint : ServerBehaviour
+    public class PoliceSpawnPoint : ServerBehaviour
     {
-        [SerializeField] private Character _playerPrefab;
-        [SerializeField] private CharacterConfig _playerConfig;
+        [SerializeField] private Character _characterPrefab;
+        [SerializeField] private CharacterConfig _characterConfig;
         [SerializeField] private GunConfig _startGunConfig;
-        [SerializeField] private Camera _camera;
+        [SerializeField] private PatrolWay _patrolWay;
 
-        private PlayerInput _playerInput;
         private IFactory _factory;
         private ProjectilePoolProvider _projectilePoolProvider;
         private GunFactory _gunFactory;
@@ -22,16 +22,12 @@ namespace Creation.Spawn
 
         protected override void OnServerNetworkSpawn()
         {
-            _playerInput = new PlayerInput();
-            _playerInput.Enable();
-
             _factory = new UnityFactory();
             _projectilePoolProvider = new ProjectilePoolProvider(_factory);
             _gunFactory = new GunFactory(_projectilePoolProvider);
 
             var characterStateMachineFactories = new ICharacterStateMachineFactory[]
             {
-                new PlayerStateMachineFactory(_playerInput, _camera),
                 new PoliceStateMachineFactory()
             };
 
@@ -42,11 +38,11 @@ namespace Creation.Spawn
 
         public void Spawn()
         {
-            var player = _characterFactory.CreatePlayer(NetworkManager.LocalClientId, _playerPrefab, _playerConfig);
-            player.Position = transform.position;
+            var character = _characterFactory.CreatePolice(NetworkManager.LocalClientId, _characterPrefab, _characterConfig, _patrolWay);
+            character.Position = transform.position;
 
-            var gun = _gunFactory.Create(_startGunConfig, player);
-            player.AttackBehaviour.Initialize(gun);
+            var gun = _gunFactory.Create(_startGunConfig, character);
+            character.AttackBehaviour.Initialize(gun);
         }
     }
 }

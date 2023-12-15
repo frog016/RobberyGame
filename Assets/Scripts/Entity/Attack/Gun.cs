@@ -40,6 +40,11 @@ namespace Entity.Attack
             _magazine.Reload();
         }
 
+        public bool IsMagazineEmpty()
+        {
+            return _magazine.IsNotEmpty() == false;
+        }
+
         private async UniTaskVoid ShootAsync(Vector2 direction)
         {
             Cooldown.Restart();

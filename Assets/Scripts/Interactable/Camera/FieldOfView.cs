@@ -1,8 +1,10 @@
-﻿using Structure.Netcode;
+﻿using Entity.Movement;
+using Structure.Netcode;
 using UnityEngine;
 
 namespace Interactable.Camera
 {
+    [RequireComponent(typeof(ITransformable))]
     public class FieldOfView : ServerBehaviour
     {
         [SerializeField, Min(0)] private float _viewRadius;
@@ -11,10 +13,13 @@ namespace Interactable.Camera
         [SerializeField] private LayerMask _obstacleLayer;
         [SerializeField] private MeshSource2D _meshSource;
 
+        private ITransformable _transformable;
         private Mesh _fieldOfViewMesh;
 
         protected override void OnServerNetworkSpawn()
         {
+            _transformable = GetComponent<ITransformable>();
+
             _fieldOfViewMesh = new Mesh();
             _meshSource.SetMesh(_fieldOfViewMesh);
         }
@@ -79,16 +84,16 @@ namespace Interactable.Camera
         private Vector2 LineCast(float angleInDegrees)
         {
             var direction = GetDirectionByAngle(angleInDegrees);
-            var hit = Physics2D.Raycast(transform.position, direction, _viewRadius, _obstacleLayer);
+            var hit = Physics2D.Raycast(_transformable.Position, direction, _viewRadius, _obstacleLayer);
 
             return hit.collider != null
                 ? hit.point
-                : (Vector2)transform.position + direction * _viewRadius;
+                : _transformable.Position + direction * _viewRadius;
         }
 
         private Vector2 GetDirectionByAngle(float angleInDegrees)
         {
-            return Quaternion.Euler(0, 0, angleInDegrees) * transform.right;
+            return Quaternion.Euler(0, 0, angleInDegrees) * _transformable.Rotation;
         }
 
         private void OnDrawGizmosSelected()

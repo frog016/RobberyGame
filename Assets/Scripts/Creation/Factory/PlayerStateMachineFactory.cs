@@ -22,7 +22,7 @@ namespace Creation.Factory
             _playerCamera = playerCamera;
         }
 
-        public IStateMachine CreateStateMachine(Character context, CharacterConfig config)
+        public IStateMachine CreateStateMachine(Character context, CharacterConfig config, object extraArgument = null)
         {
             var states = CreateStates(context, config);
             var anyTransitions = CreateAnyTransitions(context, _playerInput);

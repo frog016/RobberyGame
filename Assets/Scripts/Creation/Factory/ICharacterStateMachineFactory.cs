@@ -8,6 +8,6 @@ namespace Creation.Factory
     public interface ICharacterStateMachineFactory
     {
         TeamId CharacterTeamId { get; }
-        IStateMachine CreateStateMachine(Character context, CharacterConfig config);
+        IStateMachine CreateStateMachine(Character context, CharacterConfig config, object extraArgument = null);
     }
 }
