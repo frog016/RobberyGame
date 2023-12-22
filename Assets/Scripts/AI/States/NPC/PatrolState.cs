@@ -13,7 +13,7 @@ namespace AI.States.NPC
 
         private PatrolWayPoint CurrentPoint => _wayPoints[_currentPointIndex];
 
-        private const float DistanceEpsilon = 1e-2f;
+        private const float DistanceEpsilon = 2e-1f;
 
         public PatrolState(Character context) : base(context)
         {
