@@ -1,6 +1,7 @@
 ﻿using System.Collections.Generic;
 using System.Linq;
 using Entity.Attack;
+using Game.State;
 using Structure.Netcode;
 using UnityEngine;
 
@@ -14,7 +15,7 @@ namespace Entity
 
         public void DetectPlayer(Character character)
         {
-            _detectedPlayerTimers.Add(character, _insideDetectAreaTime);
+            _detectedPlayerTimers.TryAdd(character, _insideDetectAreaTime);
         }
 
         public void UnDetectPlayer(Character character)
@@ -50,6 +51,7 @@ namespace Entity
         private void RaiseAlert(Character character)
         {
             Debug.Log($"{character} detected!!! Alert!!! Warning!!!");
+            GameStateMachine.Instance.SetState<BattleGameState, Character>(character);
 
             Clear();
         }

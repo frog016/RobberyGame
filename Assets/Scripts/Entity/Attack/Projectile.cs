@@ -1,5 +1,7 @@
 ﻿using Creation.Pool;
 using System.Collections;
+using System.Collections.Generic;
+using System.Linq;
 using UnityEngine;
 
 namespace Entity.Attack
@@ -10,6 +12,7 @@ namespace Entity.Attack
 
         [SerializeField] private float _flySpeed;
         [SerializeField] private AnimationCurve _trajectory;
+        [SerializeField] private Collider2D _collider;
 
         private TeamId _teamId;
         private int _damage;
@@ -75,6 +78,9 @@ namespace Entity.Attack
                 var trajectoryDirection = (position + height - startPosition).normalized;
                 transform.rotation = Quaternion.Euler(0, 0, Vector2.SignedAngle(direction, trajectoryDirection));
                 transform.position = position + height;
+
+                if (_collider.OverlapCollider(new ContactFilter2D() {layerMask = LayerMask.NameToLayer("Obstacle")}, new List<Collider2D>()) > 0)
+                    yield break;
 
                 yield return new WaitForFixedUpdate();
             }

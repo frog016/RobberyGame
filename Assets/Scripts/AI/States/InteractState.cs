@@ -30,15 +30,14 @@ namespace AI.States
                 return;
 
             Ended = _timer.Tick(Time.deltaTime);
-
-            if (Ended)
-                _interactCharacter.EndInteract();
         }
 
         public void Exit()
         {
             Ended = false;
             _timer.Reset();
+
+            _interactCharacter.EndInteract();
         }
 
         public void SetDuration(float duration)

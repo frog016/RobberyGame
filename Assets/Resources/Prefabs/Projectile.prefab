@@ -125,6 +125,7 @@ MonoBehaviour:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
+  _collider: {fileID: 7055569221248735137}
 --- !u!50 &3761855034439708803
 Rigidbody2D:
   serializedVersion: 4

@@ -1,4 +1,5 @@
 ﻿using Entity;
+using Game.State;
 using UnityEngine;
 
 namespace AI.States
@@ -12,6 +13,7 @@ namespace AI.States
         public void Enter()
         {
             Debug.Log($"Battle mode launched");
+            GameStateMachine.Instance.SetState<BattleGameState, Character>(Context);
             Ended = true;
         }
     }

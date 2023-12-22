@@ -5,7 +5,7 @@ using Utilities;
 
 namespace AI.Transitions.NPC
 {
-    public class ReadyToPatrolCondition: CharacterStateCondition
+    public class ReadyToPatrolCondition : CharacterStateCondition
     {
         private readonly PatrolWayPoint[] _wayPoints;
 
