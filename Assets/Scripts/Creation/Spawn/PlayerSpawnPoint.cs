@@ -1,4 +1,5 @@
-﻿using Config;
+﻿using Cinemachine;
+using Config;
 using Creation.Factory;
 using Creation.Pool;
 using Entity;
@@ -13,6 +14,7 @@ namespace Creation.Spawn
         [SerializeField] private CharacterConfig _playerConfig;
         [SerializeField] private GunConfig _startGunConfig;
         [SerializeField] private Camera _camera;
+        [SerializeField] private CinemachineVirtualCamera _virtualCamera;
 
         private PlayerInput _playerInput;
         private IFactory _factory;
@@ -47,6 +49,9 @@ namespace Creation.Spawn
 
             var gun = _gunFactory.Create(_startGunConfig, player);
             player.AttackBehaviour.Initialize(gun);
+
+            _virtualCamera.Follow = player.transform;
+            _virtualCamera.LookAt = player.transform;
         }
     }
 }
