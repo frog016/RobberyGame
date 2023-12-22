@@ -1,8 +1,7 @@
-﻿using System.Collections.Generic;
-using Entity;
+﻿using Entity;
 using Entity.Attack;
-using Entity.Movement;
 using Interactable.Electricity;
+using Structure;
 using UnityEngine;
 
 namespace Interactable.Camera
@@ -10,7 +9,7 @@ namespace Interactable.Camera
     [RequireComponent(typeof(Collider2D), typeof(FieldOfView))]
     public class SurveillanceCamera : ElectricalInteractableObject
     {
-        public readonly List<Character> DetectedPlayers = new();
+        public readonly ObservableCollection<Character> DetectedPlayers = new();
         public bool PlayerDetected => DetectedPlayers.Count > 0;
 
         private Collider2D _collider;
@@ -18,9 +17,9 @@ namespace Interactable.Camera
 
         public override void Interact(Character character) { }
 
-        protected override void OnServerNetworkSpawn()
+        protected override void Awake()
         {
-            base.OnServerNetworkSpawn();
+            base.Awake();
 
             _collider = GetComponent<Collider2D>();
             _fieldOfView = GetComponent<FieldOfView>();

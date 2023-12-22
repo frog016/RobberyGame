@@ -32,7 +32,7 @@ namespace Creation.Factory
             yield return new IdleState();
             yield return new ReloadState(character, config.ReloadDuration);
             yield return new ShootState(character);
-            //yield return new InteractState(character, config.InteractDuration);
+            yield return new InteractState(character, config.InteractDuration);
             yield return new PatrolState(character);
         }
 
@@ -52,6 +52,9 @@ namespace Creation.Factory
 
             var patrolCondition = new ReadyToPatrolCondition(character, wayPoints);
             yield return new Transition(typeof(IdleState), typeof(PatrolState), patrolCondition);
+
+            var interactEndedCondition = new StateEndedCondition<InteractState>(character);
+            yield return new Transition(typeof(InteractState), typeof(IdleState), interactEndedCondition);
         }
     }
 }

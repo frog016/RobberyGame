@@ -9,6 +9,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 5545938145093112499}
+  - component: {fileID: 6387894917996343665}
   - component: {fileID: 8767655821395758325}
   - component: {fileID: 4726446574393674060}
   - component: {fileID: 7674167391420035232}
@@ -36,6 +37,19 @@ Transform:
   m_Children: []
   m_Father: {fileID: 4528507686410053580}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &6387894917996343665
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5744682449212645795}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 00550ee9af3cacf489d6e9db01bcccf1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _insideDetectAreaTime: 2
 --- !u!114 &8767655821395758325
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -222,6 +236,7 @@ GameObject:
   - component: {fileID: 317579919026051860}
   - component: {fileID: 4414512891894547392}
   - component: {fileID: 6672588696818585306}
+  - component: {fileID: 426028237894735693}
   - component: {fileID: 6936749787165047913}
   - component: {fileID: 302084064097062427}
   m_Layer: 0
@@ -345,6 +360,19 @@ MonoBehaviour:
     serializedVersion: 2
     m_Bits: 128
   _meshSource: {fileID: 8767655821395758325}
+--- !u!114 &426028237894735693
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6602168825426361733}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 54e045b6388779041851d2404b577e9c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _playerDetector: {fileID: 6387894917996343665}
 --- !u!50 &6936749787165047913
 Rigidbody2D:
   serializedVersion: 4

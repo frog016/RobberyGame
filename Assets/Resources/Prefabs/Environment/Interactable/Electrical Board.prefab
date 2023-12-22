@@ -13,7 +13,7 @@ GameObject:
   - component: {fileID: 6937889296472092956}
   - component: {fileID: 7109059988171623014}
   - component: {fileID: 1175243483536305379}
-  m_Layer: 7
+  m_Layer: 0
   m_Name: Electrical Board
   m_TagString: Untagged
   m_Icon: {fileID: 0}

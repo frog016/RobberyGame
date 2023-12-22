@@ -6,5 +6,6 @@ namespace Interactable
     public interface IInteractable : ITransformable
     {
         void Interact(Character character);
+        void EndInteract(Character character);
     }
 }

@@ -13,6 +13,8 @@ namespace Interactable
 
         private readonly List<IInteractable> _availableInteractable = new();
 
+        private IInteractable _lastInteractable;
+
         public void Interact()
         {
             if (CanInteract() == false)
@@ -23,6 +25,13 @@ namespace Interactable
                 .First();
 
             nearestInteractable.Interact(Character);
+            _lastInteractable = nearestInteractable;
+        }
+
+        public void EndInteract()
+        {
+            _lastInteractable.EndInteract(Character);
+            _lastInteractable = null;
         }
 
         public bool CanInteract()

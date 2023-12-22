@@ -7,17 +7,15 @@ namespace Interactable.Electricity
     {
         [SerializeField] private ElectricalBoard _electricalBoard;
 
-        protected override void OnServerNetworkSpawn()
-        {
-            base.OnServerNetworkSpawn();
+        protected bool HaveElectricity => _electricalBoard.HaveElectricity;
 
+        protected virtual void OnEnable()
+        {
             _electricalBoard.StateChanged += OnStateChanged;
         }
 
-        public override void OnNetworkDespawn()
+        protected virtual void OnDisable()
         {
-            base.OnNetworkDespawn();
-
             _electricalBoard.StateChanged -= OnStateChanged;
         }
 

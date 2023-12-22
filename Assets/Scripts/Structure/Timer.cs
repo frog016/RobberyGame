@@ -7,7 +7,7 @@
 
         public Timer(float time)
         {
-            Time = time;
+            Restart(time);
         }
 
         public bool Tick(float delta)
@@ -19,6 +19,11 @@
 
             CurrentTime -= Time;
             return true;
+        }
+
+        public void Restart(float time)
+        {
+            Time = time;
         }
 
         public void Reset()

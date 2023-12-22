@@ -6,6 +6,7 @@ namespace Interactable
     {
         Character Character { get; }
         void Interact();
+        void EndInteract();
         bool CanInteract();
 
         void AddInteractable(IInteractable interactable);

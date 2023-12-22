@@ -19,6 +19,9 @@ namespace AI.States
         public void Enter()
         {
             Ended = _interactCharacter.CanInteract() == false;
+
+            if (_interactCharacter.CanInteract())
+                _interactCharacter.Interact();
         }
 
         public void Update()
@@ -29,13 +32,18 @@ namespace AI.States
             Ended = _timer.Tick(Time.deltaTime);
 
             if (Ended)
-                _interactCharacter.Interact();
+                _interactCharacter.EndInteract();
         }
 
         public void Exit()
         {
             Ended = false;
             _timer.Reset();
+        }
+
+        public void SetDuration(float duration)
+        {
+            _timer.Restart(duration);
         }
     }
 }

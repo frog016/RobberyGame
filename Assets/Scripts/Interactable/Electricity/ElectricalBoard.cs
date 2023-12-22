@@ -12,6 +12,7 @@ namespace Interactable.Electricity
     {
         [SerializeField] private ElectricalBoarStateType _initialState;
 
+        public bool HaveElectricity => _objectStateMachine.Current is ElectricalBoardEnableState;
         public event Action<ElectricalBoarStateType> StateChanged;
 
         private IStateMachine _objectStateMachine;

@@ -17,12 +17,12 @@ namespace AI.States.NPC
 
         public PatrolState(Character context) : base(context)
         {
+            _pointTraversalOrder = TraversalOrder.Forward;
         }
 
         public void Enter(PatrolWayPoint[] points)
         {
             _wayPoints = points;
-            _pointTraversalOrder = TraversalOrder.Forward;
         }
 
         public void Update()
@@ -47,6 +47,11 @@ namespace AI.States.NPC
                 await RotateAround(point.LookRotationAngle, point.StopDuration / 4f);
                 await RotateAround(point.LookRotationAngle, point.StopDuration / 4f);
                 await RotateAround(-point.LookRotationAngle, point.StopDuration / 4f);
+            }
+            else if (point.ShouldInteract)
+            {
+                Context.StateMachine.GetState<InteractState>().SetDuration(point.StopDuration);
+                Context.StateMachine.SetState<InteractState>();
             }
             else
             {
