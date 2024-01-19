@@ -9,7 +9,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: bb8186b547551a843b39b63800d6a67f, type: 3}
+  m_Script: {fileID: 11500000, guid: 4c04adf481ad30740b0177698472974d, type: 3}
   m_Name: Test Security Guard Character
   m_EditorClassIdentifier: 
   <MaxHealth>k__BackingField: 100
@@ -19,3 +19,4 @@ MonoBehaviour:
   <ChargeDuration>k__BackingField: 0.25
   <ReloadDuration>k__BackingField: 0.5
   <InteractDuration>k__BackingField: 0
+  <AttackDistance>k__BackingField: 6

@@ -1,16 +1,17 @@
 ﻿using System;
 using System.Collections.Generic;
 using AI.FSM;
+using AI.Navigation;
 using AI.States;
 using Entity;
+using Entity.Inventory;
 using UnityEngine;
 
 namespace Interactable.Door
 {
+    [RequireComponent(typeof(DoorPhysicBody))]
     public class DoorInteractable : InteractableBase
     {
-        [field: SerializeField] public Collider2D BlockCollider { get; private set; }
-
         [SerializeField] private DoorStateType _initialState;
 
         private IStateMachine _objectStateMachine;
@@ -29,7 +30,7 @@ namespace Interactable.Door
                     _objectStateMachine.SetState<ClosedDoorState>();
                     break;
                 case ClosedDoorState:
-                    _objectStateMachine.SetState<OpenedDoorState>();
+                    _objectStateMachine.SetState<OpenedDoorState, Vector2>(character.Position);
                     break;
                 case LockedDoorState:
                     TryUnlockDoor(character);
@@ -39,8 +40,11 @@ namespace Interactable.Door
 
         private void TryUnlockDoor(Character character)
         {
-            //if (character.HaveKey())
-            //    _objectStateMachine.SetState<OpenedDoorState>();
+            if (character.TryGetComponent<IInventory>(out var inventory) && inventory.KeyWallet.IsEnough(1))
+            {
+                inventory.KeyWallet.Spend(1);
+                _objectStateMachine.SetState<OpenedDoorState>();
+            }
             //else
             //    _miniGameService.Launch<UnlockMiniGame>(
             //        () => _objectStateMachine.SetState<OpenedDoorState>(),
@@ -55,8 +59,10 @@ namespace Interactable.Door
 
         private IEnumerable<IState> GetObjectStates()
         {
-            yield return new OpenedDoorState(this);
-            yield return new ClosedDoorState(this);
+            var doorBody = GetComponent<DoorPhysicBody>();
+            
+            yield return new OpenedDoorState(this, doorBody);
+            yield return new ClosedDoorState(this, doorBody);
             yield return new LockedDoorState(this);
         }
 

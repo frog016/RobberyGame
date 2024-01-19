@@ -1,21 +1,21 @@
-﻿using AI.States;
+﻿using AI.Navigation;
+using AI.States;
+using UnityEngine;
 
 namespace Interactable.Door
 {
-    public class OpenedDoorState : DoorState, IEnterState, IExitState
+    public class OpenedDoorState : DoorState, IEnterState<Vector2>
     {
-        public OpenedDoorState(DoorInteractable context) : base(context)
+        private readonly DoorPhysicBody _doorPhysicBody;
+
+        public OpenedDoorState(DoorInteractable context, DoorPhysicBody doorPhysicBody) : base(context)
         {
+            _doorPhysicBody = doorPhysicBody;
         }
 
-        public void Enter()
+        public void Enter(Vector2 interactPosition)
         {
-            Context.BlockCollider.isTrigger = true;
-        }
-
-        public void Exit()
-        {
-            Context.BlockCollider.isTrigger = false;
+            _doorPhysicBody.Open(interactPosition);
         }
     }
 }

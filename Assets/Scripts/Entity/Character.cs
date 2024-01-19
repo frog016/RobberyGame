@@ -14,7 +14,7 @@ namespace Entity
         public Vector2 Position { get => transform.position; set => transform.position = value; }
         public Vector2 Rotation { get; set; } = Vector2.right;
 
-        public IMovement Movement { get; private set; }
+        public IMovement Movement { get; set; }
         public IStateMachine StateMachine { get; private set; }
         public AttackBehaviour AttackBehaviour { get; private set; }
 

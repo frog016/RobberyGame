@@ -29,12 +29,14 @@ namespace Creation.Factory
 
         private static IEnumerable<IState> CreateStates(Character character, CharacterConfig config)
         {
+            var aiConfig = (AICharacterConfig)config;
+
             yield return new IdleState();
             yield return new ReloadState(character, config.ReloadDuration);
             yield return new ShootState(character);
             yield return new InteractState(character, config.InteractDuration);
             yield return new PatrolState(character);
-            yield return new ChaseState(character);
+            yield return new ChaseState(character, aiConfig.AttackDistance);
         }
 
         private static IEnumerable<Transition> CreateAnyTransitions(Character character)

@@ -26,9 +26,6 @@ namespace AI.States
 
         public void Update()
         {
-            if (_interactCharacter.CanInteract() == false)
-                return;
-
             Ended = _timer.Tick(Time.deltaTime);
         }
 

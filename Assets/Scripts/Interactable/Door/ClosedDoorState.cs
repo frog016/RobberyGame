@@ -1,21 +1,20 @@
-﻿using AI.States;
+﻿using AI.Navigation;
+using AI.States;
 
 namespace Interactable.Door
 {
-    public class ClosedDoorState : DoorState, IEnterState, IExitState
+    public class ClosedDoorState : DoorState, IEnterState
     {
-        public ClosedDoorState(DoorInteractable context) : base(context)
+        private readonly DoorPhysicBody _doorPhysicBody;
+
+        public ClosedDoorState(DoorInteractable context, DoorPhysicBody doorPhysicBody) : base(context)
         {
+            _doorPhysicBody = doorPhysicBody;
         }
 
         public void Enter()
         {
-            Context.BlockCollider.isTrigger = false;
-        }
-
-        public void Exit()
-        {
-            Context.BlockCollider.isTrigger = true;
+            _doorPhysicBody.Close();
         }
     }
 }

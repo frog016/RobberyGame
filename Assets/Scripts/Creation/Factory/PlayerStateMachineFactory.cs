@@ -31,13 +31,13 @@ namespace Creation.Factory
             return new TransitionStateMachine(states, anyTransitions, transitions);
         }
 
-        private static IEnumerable<IState> CreateStates(Character character, CharacterConfig config)
+        private IEnumerable<IState> CreateStates(Character character, CharacterConfig config)
         {
             yield return new IdleState();
             yield return new WalkState(character);
             yield return new ChargeState(character, config.ChargeSpeed, config.ChargeDuration);
             yield return new SquatState(character, config.SquatSpeed);
-            yield return new BattleModeState(character);
+            yield return new BattleModeState(character, _playerInput);
             yield return new ReloadState(character, config.ReloadDuration);
             yield return new ShootState(character);
             yield return new InteractState(character, config.InteractDuration);

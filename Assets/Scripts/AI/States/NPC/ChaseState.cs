@@ -1,21 +1,26 @@
 ﻿using Entity;
+using Entity.Movement;
 using UnityEngine;
+using UnityEngine.AI;
 
 namespace AI.States.NPC
 {
-    public class ChaseState : CharacterState, IEnterState<Character>, IUpdateState
+    public class ChaseState : CharacterState, IEnterState<Character>, IUpdateState, IExitState
     {
         public Character Target { get; private set; }
-        public readonly float AttackDistance = 6f;
+        public readonly float AttackDistance;
 
         private const float DistanceEpsilon = 1e-2f;
 
-        public ChaseState(Character context) : base(context)
+        public ChaseState(Character context, float attackDistance) : base(context)
         {
+            AttackDistance = attackDistance;
         }
 
         public void Enter(Character target)
         {
+            SetAgentMovement();
+
             Ended = false;
             Target = target;
         }
@@ -27,10 +32,23 @@ namespace AI.States.NPC
             Ended = Vector2.Distance(Context.Position, Target.Position) < DistanceEpsilon;
         }
 
+        public void Exit()
+        {
+            Context.GetComponent<NavMeshAgent>().isStopped = true;
+        }
+
         private void ChaseTarget()
         {
-            var direction = (Target.Position - Context.Position).normalized;
-            Context.Movement.Move(direction);
+            Context.Movement.Move(Target.Position);
+        }
+
+        private void SetAgentMovement()
+        {
+            var navMeshAgent = Context.GetComponent<NavMeshAgent>();
+            navMeshAgent.isStopped = false;
+            
+            if (Context.Movement is not NavMeshMovement)
+                Context.Movement = new NavMeshMovement(navMeshAgent, Context.Movement.Speed);
         }
     }
 }
