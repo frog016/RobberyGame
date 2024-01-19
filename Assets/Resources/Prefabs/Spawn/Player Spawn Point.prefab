@@ -69,3 +69,5 @@ MonoBehaviour:
   _playerConfig: {fileID: 11400000, guid: 216dabcba5c6c694db8644259f2849d7, type: 2}
   _startGunConfig: {fileID: 11400000, guid: 39859ba69144b33438b35614278d38e5, type: 2}
   _camera: {fileID: 0}
+  _virtualCamera: {fileID: 0}
+  _hudPrefab: {fileID: -678652653691693787, guid: cef9c2edb8cc6714f995c8b30e64f2b3, type: 3}

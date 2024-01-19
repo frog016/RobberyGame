@@ -1,13 +1,14 @@
-﻿using Cysharp.Threading.Tasks;
+﻿using System;
+using Cysharp.Threading.Tasks;
 using UnityEngine;
+using Random = UnityEngine.Random;
 
 namespace Entity.Attack
 {
     public class Gun
     {
         public readonly Cooldown Cooldown;
-        
-        private readonly Magazine _magazine;
+        public readonly Magazine Magazine;
 
         private int _damage;
         private int _bulletLaunchCount;
@@ -18,7 +19,7 @@ namespace Entity.Attack
         public Gun(Cooldown cooldown, Magazine magazine)
         {
             Cooldown = cooldown;
-            _magazine = magazine;
+            Magazine = magazine;
         }
 
         public void Initialize(int damage, int bulletLaunchCount, float bulletLaunchDelay, float spread, TeamId teamId)
@@ -37,12 +38,12 @@ namespace Entity.Attack
 
         public void Reload()
         {
-            _magazine.Reload();
+            Magazine.Reload();
         }
 
         public bool IsMagazineEmpty()
         {
-            return _magazine.IsNotEmpty() == false;
+            return Magazine.IsNotEmpty() == false;
         }
 
         private async UniTaskVoid ShootAsync(Vector2 direction)
@@ -51,13 +52,13 @@ namespace Entity.Attack
 
             for (var i = 0; i < _bulletLaunchCount; i++)
             {
-                if (_magazine.IsNotEmpty() == false)
+                if (Magazine.IsNotEmpty() == false)
                 {
                     Debug.Log("Reload!");
                     break;
                 }
 
-                var bullet = _magazine.GetBullet();
+                var bullet = Magazine.GetBullet();
                 var shootDirection = (direction + GetSpreadDirection()).normalized;
 
                 bullet.Launch(shootDirection, _teamId, _damage);

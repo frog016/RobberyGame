@@ -8,6 +8,7 @@ namespace Entity.Attack
     {
         public int Capacity { get; private set; }
         public int RemainingCount { get; private set; }
+        public event Action<int, int> CurrentCapacityChanged;
 
         private readonly ProjectilePool _bulletPool;
         private readonly Transform _muzzle;
@@ -30,12 +31,15 @@ namespace Entity.Attack
             bullet.transform.SetPositionAndRotation(_muzzle.position, _muzzle.localRotation);
 
             RemainingCount--;
+            CurrentCapacityChanged?.Invoke(RemainingCount, Capacity);
+
             return bullet;
         }
 
         public void Reload()
         {
             RemainingCount = Capacity;
+            CurrentCapacityChanged?.Invoke(RemainingCount, Capacity);
         }
 
         public bool IsNotEmpty()

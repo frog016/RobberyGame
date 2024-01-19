@@ -2,8 +2,10 @@
 using Config;
 using Creation.Factory;
 using Entity;
+using Presenter;
 using Structure.Netcode;
 using Structure.Service;
+using Unity.Netcode;
 using UnityEngine;
 
 namespace Creation.Spawn
@@ -15,6 +17,7 @@ namespace Creation.Spawn
         [SerializeField] private GunConfig _startGunConfig;
         [SerializeField] private Camera _camera;
         [SerializeField] private CinemachineVirtualCamera _virtualCamera;
+        [SerializeField] private PresenterRoot _hudPrefab;
 
         private GunFactory _gunFactory;
         private CharacterFactory _characterFactory;
@@ -50,6 +53,12 @@ namespace Creation.Spawn
 
             _virtualCamera.Follow = player.transform;
             _virtualCamera.LookAt = player.transform;
+
+            var hud = Instantiate(_hudPrefab);
+            hud.GetComponent<NetworkObject>().SpawnWithOwnership(player.OwnerClientId, true);
+
+            hud.Initialize();
+            hud.GetComponentInChildren<CharacterInfoPanelPresenter>().Initialize(player);
         }
     }
 }

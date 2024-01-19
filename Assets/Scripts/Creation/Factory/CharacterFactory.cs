@@ -35,7 +35,7 @@ namespace Creation.Factory
             var policeCharacter = _factory.CreateForComponent(prefab);
             InitializeCharacter(policeCharacter, config, way.GetPatrolWayPoints());
 
-            policeCharacter.NetworkObject.SpawnAsPlayerObject(clientId);
+            policeCharacter.NetworkObject.SpawnWithOwnership(clientId);
             return policeCharacter;
         }
 
