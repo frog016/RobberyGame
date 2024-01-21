@@ -10,7 +10,7 @@ namespace AI.Navigation
         [SerializeField] private DoorAnimator _doorAnimator;
 
         public const float DelayBeforeOpen = 0;
-        public const float DelayBeforeClose = 2;
+        public const float DelayBeforeClose = 0;
 
         private void Awake()
         {

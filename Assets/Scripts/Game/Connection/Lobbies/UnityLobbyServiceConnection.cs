@@ -36,11 +36,12 @@ namespace Game.Connection.Lobbies
                 Player = CreateLobbyPlayer(lobbyData.PlayerName),
                 Data = new Dictionary<string, DataObject>
                 {
-                    { nameof(lobbyData.GameJoinCode), new DataObject(DataObject.VisibilityOptions.Member, lobbyData.GameJoinCode) }
+                    { nameof(lobbyData.GameJoinCode), new DataObject(DataObject.VisibilityOptions.Member, lobbyData.GameJoinCode) },
+                    { nameof(lobbyData.CreateLobbySetting.MissionName), new DataObject(DataObject.VisibilityOptions.Member, lobbyData.CreateLobbySetting.MissionName) }
                 },
             };
 
-            CurrentLobby = await _lobbyService.CreateLobbyAsync(lobbyData.LobbyName, lobbyData.MaxConnectionLimit, createLobbyOptions);
+            CurrentLobby = await _lobbyService.CreateLobbyAsync("Monki", lobbyData.CreateLobbySetting.MaxConnectionLimit, createLobbyOptions);
 
             HeartbeatLobbyAsync();
             RefreshLobbyAsync();

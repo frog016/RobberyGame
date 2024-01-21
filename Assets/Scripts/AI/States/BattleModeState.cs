@@ -1,14 +1,15 @@
 ﻿using Entity;
 using Game.State;
+using InputSystem;
 using UnityEngine;
 
 namespace AI.States
 {
     public class BattleModeState : CharacterState, IEnterState
     {
-        private readonly PlayerInput _input;
+        private readonly IPlayerInput _input;
 
-        public BattleModeState(Character context, PlayerInput input) : base(context)
+        public BattleModeState(Character context, IPlayerInput input) : base(context)
         {
             _input = input;
         }

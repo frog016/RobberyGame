@@ -1,13 +1,13 @@
 ﻿using Entity;
-using UnityEngine.InputSystem;
+using InputSystem;
 
 namespace AI.Transitions
 {
     public class HaveReloadInputCondition : CharacterStateCondition
     {
-        private readonly InputAction _reloadAction;
+        private readonly IInputAction _reloadAction;
 
-        public HaveReloadInputCondition(Character character, PlayerInput input) : base(character)
+        public HaveReloadInputCondition(Character character, IPlayerInput input) : base(character)
         {
             _reloadAction = input.CharacterBattleMode.Reload;
         }

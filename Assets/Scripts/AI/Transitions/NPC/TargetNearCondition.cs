@@ -10,8 +10,6 @@ namespace AI.Transitions.NPC
 {
     public class TargetNearCondition : CharacterStateCondition
     {
-        private static readonly int ObstacleLayerMask = LayerMask.NameToLayer("Obstacle");
-
         public TargetNearCondition(Character character) : base(character)
         {
         }

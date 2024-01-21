@@ -1,6 +1,7 @@
 ﻿using System;
 using AI.States;
 using Entity;
+using InputSystem;
 using UnityEngine;
 using UnityEngine.InputSystem;
 using Utilities;
@@ -9,13 +10,13 @@ namespace AI.Transitions
 {
     public class HaveShootInputCondition : CharacterStateCondition
     {
-        private readonly InputAction _shootInput;
+        private readonly IInputAction _shootInput;
         private readonly Camera _camera;
 
-        public HaveShootInputCondition(Character character, PlayerInput input, Camera camera) : base(character)
+        public HaveShootInputCondition(Character character, IPlayerInput input) : base(character)
         {
             _shootInput = input.CharacterBattleMode.Shoot;
-            _camera = camera;
+            _camera = Camera.main;
         }
 
         public override bool IsHappened()

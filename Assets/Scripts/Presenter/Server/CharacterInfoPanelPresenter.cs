@@ -1,17 +1,16 @@
 ﻿using Entity;
 using Entity.Inventory;
 using Structure.Netcode;
+using UnityEngine;
 
 namespace Presenter
 {
-    public partial class CharacterInfoPanelPresenter : ServerBehaviour
+    public partial class CharacterInfoPanelPresenter : ServerBehaviour, IUIPresenter
     {
-        private Character _character;
+        [SerializeField] private Character _character;
 
-        public void Initialize(Character character)
+        public void Initialize()
         {
-            _character = character;
-
             InitializeWeaponViewClientRpc();
 
             var magazine = _character.AttackBehaviour.Gun.Magazine;

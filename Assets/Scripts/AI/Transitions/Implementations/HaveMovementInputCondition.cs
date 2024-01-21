@@ -1,17 +1,17 @@
-﻿using System;
-using AI.States;
+﻿using AI.States;
 using Entity;
+using InputSystem;
+using System;
 using UnityEngine;
-using UnityEngine.InputSystem;
 using Utilities;
 
 namespace AI.Transitions
 {
     public class HaveMovementInputCondition : CharacterStateCondition
     {
-        private readonly InputAction _moveInput;
+        private readonly IInputAction _moveInput;
 
-        public HaveMovementInputCondition(Character character, PlayerInput input) : base(character)
+        public HaveMovementInputCondition(Character character, IPlayerInput input) : base(character)
         {
             _moveInput = input.CharacterBaseMode.Move;
         }

@@ -1,20 +1,22 @@
 ﻿using Entity;
-using UnityEngine.InputSystem;
+using Game.State;
+using InputSystem;
 
 namespace AI.Transitions
 {
     public class HaveBattleModeInputCondition : CharacterStateCondition
     {
-        private readonly InputAction _launchModeAction;
+        private readonly IInputAction _launchModeAction;
 
-        public HaveBattleModeInputCondition(Character character, PlayerInput input) : base(character)
+        public HaveBattleModeInputCondition(Character character, IPlayerInput input) : base(character)
         {
             _launchModeAction = input.CharacterStealthMode.BattleMode;
         }
 
         public override bool IsHappened()
         {
-            return _launchModeAction.WasPressedThisFrame();
+            return GameStateMachine.Instance.Current is not BattleGameState &&
+                   _launchModeAction.WasPressedThisFrame();
         }
     }
 }

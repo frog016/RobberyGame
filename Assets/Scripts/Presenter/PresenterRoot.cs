@@ -1,14 +1,7 @@
-﻿using Unity.Netcode;
-using UnityEngine;
-using UnityEngine.EventSystems;
-
-namespace Presenter
+﻿namespace Presenter
 {
-    public class PresenterRoot : NetworkBehaviour
+    public class PresenterRoot : LocalPlayerUIPresenter
     {
-        [SerializeField] private GameObject _ui;
-        [SerializeField] private EventSystem _eventSystem;
-
         public void Initialize()
         {
             var presenters = GetComponentsInChildren<IUIPresenter>();
@@ -16,15 +9,6 @@ namespace Presenter
             {
                 presenter.Initialize();
             }
-        }
-
-        public override void OnNetworkSpawn()
-        {
-            if (IsLocalPlayer == false)
-                return;
-
-            _ui.SetActive(false);
-            _eventSystem.gameObject.SetActive(false);
         }
     }
 }

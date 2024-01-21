@@ -61,12 +61,14 @@ namespace Creation.Factory
             var interactionEndedCondition = new StateEndedCondition<InteractState>(character);
             yield return new Transition(typeof(InteractState), typeof(IdleState), interactionEndedCondition);
 
-            var patrolCondition = new ReadyToPatrolCondition(character, wayPoints);
-            yield return new Transition(typeof(IdleState), typeof(PatrolState), patrolCondition);
-
             var targetChasedCondition = new TargetNearCondition(character);
             yield return new Transition(typeof(ChaseState), typeof(ShootState), targetChasedCondition);
-            yield return new Transition(typeof(ShootState), typeof(ChaseState), targetChasedCondition, true);
+
+            var targetFarAwayCondition = new TargetFarAwayCondition(character);
+            yield return new Transition(typeof(ShootState), typeof(ChaseState), targetFarAwayCondition);
+
+            var patrolCondition = new ReadyToPatrolCondition(character, wayPoints);
+            yield return new Transition(typeof(IdleState), typeof(PatrolState), patrolCondition);
         }
     }
 }

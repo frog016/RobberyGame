@@ -5,6 +5,7 @@ using AI.Transitions;
 using Config;
 using Entity;
 using Entity.Attack;
+using InputSystem;
 using UnityEngine;
 
 namespace Creation.Factory
@@ -13,20 +14,18 @@ namespace Creation.Factory
     {
         public TeamId CharacterTeamId => TeamId.Player;
 
-        private readonly PlayerInput _playerInput;
-        private readonly Camera _playerCamera;
+        private readonly IPlayerInput _playerInput;
 
-        public PlayerStateMachineFactory(PlayerInput playerInput, Camera playerCamera)
+        public PlayerStateMachineFactory(IPlayerInput playerInput)
         {
             _playerInput = playerInput;
-            _playerCamera = playerCamera;
         }
 
         public IStateMachine CreateStateMachine(Character context, CharacterConfig config, object extraArgument = null)
         {
             var states = CreateStates(context, config);
             var anyTransitions = CreateAnyTransitions(context, _playerInput);
-            var transitions = CreateTransitions(context, _playerInput, _playerCamera);
+            var transitions = CreateTransitions(context, _playerInput);
 
             return new TransitionStateMachine(states, anyTransitions, transitions);
         }
@@ -43,7 +42,7 @@ namespace Creation.Factory
             yield return new InteractState(character, config.InteractDuration);
         }
 
-        private static IEnumerable<Transition> CreateAnyTransitions(Character character, PlayerInput input)
+        private static IEnumerable<Transition> CreateAnyTransitions(Character character, IPlayerInput input)
         {
             var launchModeCondition = new HaveBattleModeInputCondition(character, input);
             yield return new Transition(null, typeof(BattleModeState), launchModeCondition);
@@ -52,7 +51,7 @@ namespace Creation.Factory
             yield return new Transition(null, typeof(ReloadState), reloadInputCondition);
         }
 
-        private static IEnumerable<Transition> CreateTransitions(Character character, PlayerInput input, Camera camera)
+        private static IEnumerable<Transition> CreateTransitions(Character character, IPlayerInput input)
         {
             var launchEndedCondition = new StateEndedCondition<BattleModeState>(character);
             yield return new Transition(typeof(BattleModeState), typeof(IdleState), launchEndedCondition);
@@ -82,7 +81,7 @@ namespace Creation.Factory
             var interactionEndedCondition = new StateEndedCondition<InteractState>(character);
             yield return new Transition(typeof(InteractState), typeof(IdleState), interactionEndedCondition);
 
-            var shootInputCondition = new HaveShootInputCondition(character, input, camera);
+            var shootInputCondition = new HaveShootInputCondition(character, input);
             yield return new Transition(typeof(IdleState), typeof(ShootState), shootInputCondition);
             yield return new Transition(typeof(SquatState), typeof(ShootState), shootInputCondition);
             yield return new Transition(typeof(WalkState), typeof(ShootState), shootInputCondition);

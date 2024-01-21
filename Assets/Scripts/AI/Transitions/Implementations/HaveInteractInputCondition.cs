@@ -1,13 +1,13 @@
 ﻿using Entity;
-using UnityEngine.InputSystem;
+using InputSystem;
 
 namespace AI.Transitions
 {
     public class HaveInteractInputCondition : CharacterStateCondition
     {
-        private readonly InputAction _interactAction;
+        private readonly IInputAction _interactAction;
 
-        public HaveInteractInputCondition(Character character, PlayerInput input) : base(character)
+        public HaveInteractInputCondition(Character character, IPlayerInput input) : base(character)
         {
             _interactAction = input.CharacterBaseMode.Interact;
         }

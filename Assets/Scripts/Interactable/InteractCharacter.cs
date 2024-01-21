@@ -30,7 +30,7 @@ namespace Interactable
 
         public void EndInteract()
         {
-            _lastInteractable.EndInteract(Character);
+            _lastInteractable?.EndInteract(Character);
             _lastInteractable = null;
         }
 

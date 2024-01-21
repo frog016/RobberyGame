@@ -1,36 +1,50 @@
+using System.Threading.Tasks;
 using AI.FSM;
 using AI.States;
 using Creation.Factory;
 using Creation.Pool;
+using Cysharp.Threading.Tasks;
+using Game.Connection;
+using Game.Connection.Lobbies;
 using Game.State;
+using Structure.Scene;
 using Structure.Service;
+using Unity.Netcode;
+using Unity.Netcode.Transports.UTP;
+using Unity.Services.Lobbies;
+using Unity.Services.Relay;
 using UnityEngine;
-using UnityEngine.SceneManagement;
 
 namespace Game
 {
     public class Bootstrap : MonoBehaviour
     {
-        [SerializeField] private string _sceneName;
+        [SerializeField] private ConnectionManager _connectionManager;
+        [SerializeField] private NetworkManager _networkManager;
 
-        private GameStateMachine _gameStateMachine;
         private IServiceLocator _serviceLocator;
 
-        private void Awake()
+        private async void Awake()
         {
             _serviceLocator = new ServiceLocator();
+            await Register();
 
-            var stateMachineImplementation = CreateGameStateMachineImplementation();
-
-            _gameStateMachine = new GameStateMachine(stateMachineImplementation);
-            _gameStateMachine.SetState<StealthGameState>();
-
-            Register();
+            ConstructConnectionManager();
+            LoadNextScene();
         }
 
-        private void Register()
+        private async Task Register()
         {
-            _serviceLocator.Register(_gameStateMachine);
+            var authService = new UnityAuthenticationService();
+            await authService.AuthenticateAsync();
+            _serviceLocator.Register<IAuthenticationService>(authService);
+
+            var gameStateMachine = new GameStateMachine(CreateGameStateMachineImplementation());
+            gameStateMachine.SetState<StealthGameState>();
+            _serviceLocator.Register(gameStateMachine);
+
+            var sceneLoader = new UnitySceneLoader(NetworkManager.Singleton);
+            _serviceLocator.Register<ISceneLoader>(sceneLoader);
 
             var factory = new UnityFactory();
             _serviceLocator.Register<IFactory>(factory);
@@ -42,14 +56,21 @@ namespace Game
             _serviceLocator.Register(gunFactory);
         }
 
-        private void Start()
+        private void ConstructConnectionManager()
         {
-            LoadNextScene();
+            var unityTransport = _networkManager.GetComponent<UnityTransport>();
+            var gameConnectionCreator = new RelayGameConnectionCreator(RelayService.Instance, _networkManager, unityTransport);
+
+            var authenticationService = ServiceLocator.Instance.Get<IAuthenticationService>();
+            var lobbyConnection = new UnityLobbyServiceConnection(LobbyService.Instance, authenticationService);
+
+            _connectionManager.Constructor(gameConnectionCreator, lobbyConnection);
         }
 
         private void LoadNextScene()
         {
-            SceneManager.LoadScene(_sceneName, LoadSceneMode.Single);
+            var sceneLoader = _serviceLocator.Get<ISceneLoader>();
+            sceneLoader.LoadAsync(SceneNames.MainMenuScene).Forget();
         }
 
         private static IStateMachine CreateGameStateMachineImplementation()

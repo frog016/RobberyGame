@@ -10,5 +10,11 @@
             PlayerName = playerName;
             LobbyCode = lobbyCode;
         }
+
+        public JoinLobbyData(string lobbyCode)
+        {
+            PlayerName = "Monki";
+            LobbyCode = lobbyCode;
+        }
     }
 }

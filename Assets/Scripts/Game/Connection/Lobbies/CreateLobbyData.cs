@@ -3,26 +3,21 @@
     public struct CreateLobbyData
     {
         public string PlayerName;
-        public string LobbyName;
         public string GameJoinCode;
-        public int MaxConnectionLimit;
+        public CreateLobbySetting CreateLobbySetting;
 
-        private const string LobbyTestName = "Monki Lobby";
-
-        public CreateLobbyData(string playerName, string lobbyName, string gameJoinCode, int maxConnectionLimit)
+        public CreateLobbyData(string playerName, string gameJoinCode, CreateLobbySetting createLobbySetting)
         {
             PlayerName = playerName;
-            LobbyName = lobbyName;
             GameJoinCode = gameJoinCode;
-            MaxConnectionLimit = maxConnectionLimit;
+            CreateLobbySetting = createLobbySetting;
         }
 
-        public CreateLobbyData(string playerName, string gameJoinCode, int maxConnectionLimit)
+        public CreateLobbyData(string gameJoinCode, CreateLobbySetting createLobbySetting)
         {
-            PlayerName = playerName;
-            LobbyName = LobbyTestName;
+            PlayerName = "Host Monki";
             GameJoinCode = gameJoinCode;
-            MaxConnectionLimit = maxConnectionLimit;
+            CreateLobbySetting = createLobbySetting;
         }
     }
 }

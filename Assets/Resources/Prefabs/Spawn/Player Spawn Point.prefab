@@ -70,4 +70,4 @@ MonoBehaviour:
   _startGunConfig: {fileID: 11400000, guid: 39859ba69144b33438b35614278d38e5, type: 2}
   _camera: {fileID: 0}
   _virtualCamera: {fileID: 0}
-  _hudPrefab: {fileID: -678652653691693787, guid: cef9c2edb8cc6714f995c8b30e64f2b3, type: 3}
+  _networkInputPrefab: {fileID: 502480356921376120, guid: 6d4ce6bfb93174b42b1ddabcc98d6d7d, type: 3}

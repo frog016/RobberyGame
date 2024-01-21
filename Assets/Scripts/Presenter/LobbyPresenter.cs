@@ -10,7 +10,7 @@ namespace Presenter
     public class LobbyPresenter : NetworkBehaviour
     {
         [SerializeField] private LobbyUIPanel _lobbyPanel;
-        [SerializeField] private ConnectionUIPanel _connectionPanel;
+        [SerializeField] private LobbyConnectionUIPanel _connectionPanel;
 
         private ISceneLoader _sceneLoader;
         private ConnectionManager _connectionManager;
@@ -49,7 +49,6 @@ namespace Presenter
             await _connectionManager.LeaveLobbyAsync();
             NetworkManager.Shutdown();
 
-            _lobbyPanel.Clear();
             _lobbyPanel.Close();
 
             _connectionPanel.Open();
@@ -57,11 +56,7 @@ namespace Presenter
 
         private void OnLobbyRefreshed(Lobby lobby)
         {
-            _lobbyPanel.Clear();
-            _lobbyPanel.Initialize(lobby.Name, lobby.LobbyCode, IsServer);
-
-            foreach (var player in lobby.Players)
-                _lobbyPanel.AddPlayerView(player.Id, player.Data["PlayerName"].Value);
+            _lobbyPanel.Initialize(lobby.LobbyCode, IsServer);
 
             if (_lobbyPanel.IsActive == false)
                 _lobbyPanel.Open();
