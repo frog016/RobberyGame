@@ -1,4 +1,5 @@
 ﻿using AI.FSM;
+using Cinemachine;
 using Entity.Attack;
 using Entity.Health;
 using Entity.Movement;
@@ -36,7 +37,22 @@ namespace Entity
 
         protected override void DestroyDamageable()
         {
+            if (TeamId == TeamId.Player)
+            {
+                DetachCamera();
+            }
+
             NetworkObject.Despawn();
+        }
+
+        private void DetachCamera()
+        {
+            var cameraRoot = GetComponentInChildren<Camera>().transform.parent;
+            cameraRoot.transform.SetParent(null, true);
+
+            var virtualCamera = cameraRoot.GetComponentInChildren<CinemachineVirtualCamera>();
+            virtualCamera.Follow = null;
+            virtualCamera.LookAt = null;
         }
     }
 }

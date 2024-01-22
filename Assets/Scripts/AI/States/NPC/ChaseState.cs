@@ -27,6 +27,12 @@ namespace AI.States.NPC
 
         public void Update()
         {
+            if (Target == null)
+            {
+                Ended = true;
+                return;
+            }
+
             ChaseTarget();
 
             Ended = Vector2.Distance(Context.Position, Target.Position) < DistanceEpsilon;

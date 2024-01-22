@@ -14,7 +14,7 @@ namespace AI.Transitions.NPC
             var chaseState = Character.StateMachine.GetState<ChaseState>();
             var target = chaseState.Target;
 
-            return target != null && target.IsAlive() == false;
+            return target == null || target.IsAlive() == false;
         }
     }
 }
