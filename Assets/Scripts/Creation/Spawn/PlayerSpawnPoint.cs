@@ -44,10 +44,6 @@ namespace Creation.Spawn
             var playerInput = Instantiate(_networkInputPrefab);
             playerInput.GetComponent<NetworkObject>().SpawnWithOwnership(connectedClientId);
 
-            playerInput.CharacterBaseMode.Enable();
-            playerInput.CharacterStealthMode.Enable();
-            playerInput.CharacterBattleMode.Disable();
-
             return playerInput;
         }
 

@@ -1,6 +1,4 @@
-﻿using InputSystem.Mobile;
-
-namespace InputSystem
+﻿namespace InputSystem
 {
     public abstract class BaseInputModule : IInputModule
     {

@@ -11,7 +11,7 @@ namespace Presenter
 
         public override void OnNetworkSpawn()
         {
-            if (IsLocalPlayer || OwnerClientId != NetworkManager.LocalClientId)
+            if (IsClient && IsLocalPlayer)
                 return;
 
             if (_camera != null)

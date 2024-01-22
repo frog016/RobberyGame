@@ -15,7 +15,12 @@ namespace InputSystem
         public override void OnNetworkSpawn()
         {
             InitializeInput();
+
             _inputActionTable = InitializeInputTable();
+
+            CharacterBaseMode.Enable();
+            CharacterStealthMode.Enable();
+            CharacterBattleMode.Disable();
         }
 
         private void Update()
@@ -55,7 +60,7 @@ namespace InputSystem
         protected abstract void UpdateStealthInputModule();
         protected abstract void UpdateBattleInputModule();
 
-        [ServerRpc(Delivery = RpcDelivery.Unreliable, RequireOwnership = false)]
+        [ServerRpc(Delivery = RpcDelivery.Reliable, RequireOwnership = false)]
         protected void SetVector2ForInputActionServerRpc(string inputActionName, Vector2 inputValue, bool wasPressedThisFrame, bool isPressed)
         {
             var inputAction = _inputActionTable[inputActionName];
@@ -66,7 +71,7 @@ namespace InputSystem
             networkInputAction.SetPressed(isPressed);
         }
 
-        [ServerRpc(Delivery = RpcDelivery.Unreliable, RequireOwnership = false)]
+        [ServerRpc(Delivery = RpcDelivery.Reliable, RequireOwnership = false)]
         protected void SetFloatForInputActionServerRpc(string inputActionName, float inputValue, bool wasPressedThisFrame, bool isPressed)
         {
             var inputAction = _inputActionTable[inputActionName];
