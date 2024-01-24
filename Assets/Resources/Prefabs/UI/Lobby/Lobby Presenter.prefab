@@ -46,6 +46,11 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _lobbyPanel: {fileID: 0}
   _connectionPanel: {fileID: 0}
+  _initialGunConfigs:
+  - {fileID: 11400000, guid: b769779c600793d47882f61593b71e28, type: 2}
+  - {fileID: 11400000, guid: 0b3eb926b163a4349b3adfd0ef95e4db, type: 2}
+  - {fileID: 11400000, guid: dbd6a6f28de134b4c88774a483c815a6, type: 2}
+  - {fileID: 11400000, guid: 8b398e53fddaedd4ca3a98b3566e9783, type: 2}
 --- !u!1 &8045111199903163549
 GameObject:
   m_ObjectHideFlags: 0

@@ -14,7 +14,6 @@ namespace Creation.Spawn
     {
         [SerializeField] private Character _playerPrefab;
         [SerializeField] private CharacterConfig _playerConfig;
-        [SerializeField] private GunConfig _startGunConfig;
         [SerializeField] private NetworkPlayerInput _networkInputPrefab;
 
         private GunFactory _gunFactory;
@@ -52,7 +51,8 @@ namespace Creation.Spawn
             var player = characterFactory.CreatePlayer(connectedClientId, _playerPrefab, _playerConfig);
             player.Position = transform.position;
 
-            var gun = _gunFactory.Create(_startGunConfig, player);
+            var gunConfig = StartGameConfig.SelectedStartGun[connectedClientId];
+            var gun = _gunFactory.Create(gunConfig, player);
             player.AttackBehaviour.Initialize(gun);
 
             var presenterRoot = player.GetComponentInChildren<PresenterRoot>();

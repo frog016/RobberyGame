@@ -7,13 +7,7 @@
 
         public JoinLobbyData(string playerName, string lobbyCode)
         {
-            PlayerName = playerName;
-            LobbyCode = lobbyCode;
-        }
-
-        public JoinLobbyData(string lobbyCode)
-        {
-            PlayerName = "Monki";
+            PlayerName = "Monki " + playerName;
             LobbyCode = lobbyCode;
         }
     }

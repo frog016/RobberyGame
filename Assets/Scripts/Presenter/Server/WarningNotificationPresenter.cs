@@ -31,7 +31,7 @@ namespace Presenter
         private async UniTaskVoid ToggleNotification()
         {
             ShowNotificationClientRpc();
-            await UniTask.WaitForSeconds(_notificationActiveTime);
+            await UniTask.WaitForSeconds(_notificationActiveTime, cancellationToken: destroyCancellationToken);
             CloseNotificationClientRpc();
         }
     }

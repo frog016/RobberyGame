@@ -68,7 +68,7 @@ namespace Presenter
         {
             var gameJoinCode = await _connectionManager.CreateGameAsync(createLobbySetting.MaxConnectionLimit);
 
-            var createLobbyData = new CreateLobbyData(gameJoinCode, createLobbySetting);
+            var createLobbyData = new CreateLobbyData(GetRandomName(), gameJoinCode, createLobbySetting);
             await _connectionManager.CreateLobbyAsync(createLobbyData);
 
             _createPanel.Close();
@@ -76,7 +76,7 @@ namespace Presenter
 
         private async void JoinLobby(string joinCode)
         {
-            var joinLobbyData = new JoinLobbyData(joinCode);
+            var joinLobbyData = new JoinLobbyData(GetRandomName(), joinCode);
             await _connectionManager.JoinLobbyAsync(joinLobbyData);
 
             var gameJoinCode = _connectionManager.CurrentLobby.Data[nameof(CreateLobbyData.GameJoinCode)].Value;
@@ -112,6 +112,38 @@ namespace Presenter
         {
             _joinPanel.Close();
             _connectionPanel.Open();
+        }
+
+        private static string GetRandomName()
+        {
+            const int stringNameLength = 5;
+            const int numberNameLength = 3;
+
+            return GetRandomString(stringNameLength) + GetRandomNumber(numberNameLength);
+        }
+
+        private static string GetRandomString(int length)
+        {
+            const int minCharCode = 97;
+            const int maxCharCode = 122;
+
+            var chars = new char[length];
+            for (var index = 0; index < chars.Length; index++)
+                chars[index] = (char)Random.Range(minCharCode, maxCharCode);
+
+            return new string(chars);
+        }
+
+        private static string GetRandomNumber(int length)
+        {
+            const int minNumber = 0;
+            const int maxNumber = 9;
+
+            var chars = new char[length];
+            for (var index = 0; index < chars.Length; index++)
+                chars[index] = char.Parse(Random.Range(minNumber, maxNumber).ToString());
+
+            return new string(chars);
         }
     }
 }

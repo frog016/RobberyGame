@@ -68,6 +68,4 @@ MonoBehaviour:
   _playerPrefab: {fileID: 317579919026051860, guid: 3406a6c86b7bc534da84074c7f63752f, type: 3}
   _playerConfig: {fileID: 11400000, guid: 216dabcba5c6c694db8644259f2849d7, type: 2}
   _startGunConfig: {fileID: 11400000, guid: 39859ba69144b33438b35614278d38e5, type: 2}
-  _camera: {fileID: 0}
-  _virtualCamera: {fileID: 0}
   _networkInputPrefab: {fileID: 502480356921376120, guid: 6d4ce6bfb93174b42b1ddabcc98d6d7d, type: 3}

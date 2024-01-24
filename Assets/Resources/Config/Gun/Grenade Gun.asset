@@ -1,0 +1,21 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bcfa9ecbc5227cb49ab4367cb45c47c7, type: 3}
+  m_Name: Grenade Gun
+  m_EditorClassIdentifier: 
+  <ShootDamage>k__BackingField: 27
+  <ShootCooldown>k__BackingField: 0.7
+  <ShootSpread>k__BackingField: 0.5
+  <BulletLaunchCount>k__BackingField: 3
+  <BulletLaunchDelay>k__BackingField: 0.15
+  <ProjectilePrefab>k__BackingField: {fileID: 8298602286054986664, guid: bab66d2ea5c949d49b83eb2a6aa448ad, type: 3}
+  <MagazineCapacity>k__BackingField: 15
