@@ -10,6 +10,7 @@
 
         public static readonly string GameplayScene = "Gameplay Scene";
         public static readonly string GameplayMap1 = "Map1 Scene";
+        public static readonly string GameplayMap2 = "Map2 Scene";
 
         #endregion
     }

@@ -45,7 +45,7 @@ namespace Presenter
             });
 
             _lobbyPanel.WeaponList.Initialize(_initialGunConfigs);
-            _lobbyPanel.MapList.Initialize(new string[] { SceneNames.GameplayScene, SceneNames.GameplayMap1 });
+            _lobbyPanel.MapList.Initialize(new string[] { SceneNames.GameplayScene, SceneNames.GameplayMap1, SceneNames.GameplayMap2 });
 
             OnWeaponSelected(_initialGunConfigs[0]);
             OnMapSelected(SceneNames.GameplayScene);
