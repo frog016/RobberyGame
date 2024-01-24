@@ -3,7 +3,9 @@ using Cinemachine;
 using Entity.Attack;
 using Entity.Health;
 using Entity.Movement;
+using UI.Connection;
 using UnityEngine;
+using UnityEngine.EventSystems;
 
 namespace Entity
 {
@@ -53,6 +55,11 @@ namespace Entity
             var virtualCamera = cameraRoot.GetComponentInChildren<CinemachineVirtualCamera>();
             virtualCamera.Follow = null;
             virtualCamera.LookAt = null;
+
+            var winLose = GetComponentInChildren<WinLoseUIPanel>().transform.parent.parent;
+            winLose.SetParent(null, true);
+
+            EventSystem.current.transform.SetParent(null, true);
         }
     }
 }

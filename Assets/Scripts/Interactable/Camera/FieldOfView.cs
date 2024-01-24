@@ -13,6 +13,8 @@ namespace Interactable.Camera
         [SerializeField] private LayerMask _obstacleLayer;
         [SerializeField] private MeshSource2D _meshSource;
 
+        public MeshSource2D MeshSource => _meshSource;
+
         private ITransformable _transformable;
         private Mesh _fieldOfViewMesh;
 

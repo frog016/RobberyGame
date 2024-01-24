@@ -1,5 +1,6 @@
 ﻿using Entity;
 using Entity.Movement;
+using Interactable.Camera;
 using UnityEngine;
 using UnityEngine.AI;
 
@@ -20,6 +21,7 @@ namespace AI.States.NPC
         public void Enter(Character target)
         {
             SetAgentMovement();
+            DisableFieldOfView();
 
             Ended = false;
             Target = target;
@@ -55,6 +57,13 @@ namespace AI.States.NPC
             
             if (Context.Movement is not NavMeshMovement)
                 Context.Movement = new NavMeshMovement(navMeshAgent, Context.Movement.Speed);
+        }
+
+        private void DisableFieldOfView()
+        {
+            var fieldOfView = Context.GetComponent<FieldOfView>();
+            fieldOfView.enabled = false;
+            fieldOfView.MeshSource.gameObject.SetActive(false);
         }
     }
 }

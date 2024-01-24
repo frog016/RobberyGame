@@ -1,6 +1,7 @@
 ﻿using Config;
 using Creation.Factory;
 using Entity;
+using Game.Result;
 using InputSystem;
 using Presenter;
 using Structure.Netcode;
@@ -15,6 +16,7 @@ namespace Creation.Spawn
         [SerializeField] private Character _playerPrefab;
         [SerializeField] private CharacterConfig _playerConfig;
         [SerializeField] private NetworkPlayerInput _networkInputPrefab;
+        [SerializeField] private ResultObserver _resultObserver;
 
         private GunFactory _gunFactory;
 
@@ -57,6 +59,8 @@ namespace Creation.Spawn
 
             var presenterRoot = player.GetComponentInChildren<PresenterRoot>();
             presenterRoot.Initialize();
+
+            _resultObserver.Add(connectedClientId, player);
         }
     }
 }
