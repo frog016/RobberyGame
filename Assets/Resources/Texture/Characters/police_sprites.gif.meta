@@ -1,0 +1,5156 @@
+fileFormatVersion: 2
+guid: 79ad907570bf91040bd2cac09f9abfee
+TextureImporter:
+  internalIDToNameTable: []
+  externalObjects: {}
+  serializedVersion: 12
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 24
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Server
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: police_sprites_0
+      rect:
+        serializedVersion: 2
+        x: 4
+        y: 353
+        width: 18
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4dc6b2b561c5222418dab56fa144989b
+      internalID: -1874651467
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: police_sprites_1
+      rect:
+        serializedVersion: 2
+        x: 27
+        y: 354
+        width: 18
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5b911c5b86e96fc4b94039fc8f306d9a
+      internalID: -1723251074
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: police_sprites_2
+      rect:
+        serializedVersion: 2
+        x: 50
+        y: 353
+        width: 18
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e8eb7793021af9c4d91bed18aceebc06
+      internalID: 716647917
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: police_sprites_3
+      rect:
+        serializedVersion: 2
+        x: 77
+        y: 353
+        width: 16
+        height: 26
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 187031ce4b652204a82e12dcd760b9bc
+      internalID: -261672098
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: police_sprites_4
+      rect:
+        serializedVersion: 2
+        x: 100
+        y: 354
+        width: 16
+        height: 26
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6a6c77d6f26b15e4a9383c96658309f7
+      internalID: -970460995
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: police_sprites_5
+      rect:
+        serializedVersion: 2
+        x: 123
+        y: 353
+        width: 16
+        height: 26
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 822d57394da8c8b4598b30642a13813c
+      internalID: 158341191
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: police_sprites_6
+      rect:
+        serializedVersion: 2
+        x: 147
+        y: 353
+        width: 20
+        height: 25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 80f2ba427645fe94fb96ff830d6ebb9c
+      internalID: 731684636
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: police_sprites_7
+      rect:
+        serializedVersion: 2
+        x: 170
+        y: 354
+        width: 20
+        height: 25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9025e6a6807adc44585f5b445cc329ff
+      internalID: -1765661975
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: police_sprites_8
+      rect:
+        serializedVersion: 2
+        x: 193
+        y: 353
+        width: 20
+        height: 25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6966dbb8945641f44ae333951b671433
+      internalID: 903701938
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: police_sprites_9
+      rect:
+        serializedVersion: 2
+        x: 220
+        y: 353
+        width: 18
+        height: 26
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7a88ca08eb64dd04bb551919e472d63b
+      internalID: -160903876
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: police_sprites_10
+      rect:
+        serializedVersion: 2
+        x: 243
+        y: 354
+        width: 18
+        height: 26
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f567183edb0035e4dacb97573066f257
+      internalID: 728960508
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: police_sprites_11
+      rect:
+        serializedVersion: 2
+        x: 266
+        y: 353
+        width: 18
+        height: 26
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 35a01214c3d7be844b6b16b3d87c7bcc
+      internalID: -64134926
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: police_sprites_12
+      rect:
+        serializedVersion: 2
+        x: 292
+        y: 353
+        width: 18
+        height: 25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5d1002d541276aa49840245a41370b3b
+      internalID: 1658718716
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: police_sprites_13
+      rect:
+        serializedVersion: 2
+        x: 315
+        y: 354
+        width: 18
+        height: 25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 197770f617133d4479e707f0b21439cb
+      internalID: -1654981244
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: police_sprites_14
+      rect:
+        serializedVersion: 2
+        x: 338
+        y: 353
+        width: 18
+        height: 25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 47198c213a5aed944926ebfd450c078c
+      internalID: 4257431
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: police_sprites_15
+      rect:
+        serializedVersion: 2
+        x: 365
+        y: 353
+        width: 16
+        height: 26
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ed7bbf5d88ab9f14b881a05d3394591d
+      internalID: 1356938602
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: police_sprites_16
+      rect:
+        serializedVersion: 2
+        x: 388
+        y: 354
+        width: 16
+        height: 26
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7c13f46b6931c8b4d9cf5c16990037a3
+      internalID: 1474077117
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: police_sprites_17
+      rect:
+        serializedVersion: 2
+        x: 411
+        y: 353
+        width: 16
+        height: 26
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ab627aa1bfa14e24abdfd0bac7f3d8c0
+      internalID: -1630233217
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: police_sprites_18
+      rect:
+        serializedVersion: 2
+        x: 435
+        y: 353
+        width: 20
+        height: 25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ff8c7f1017f4548489a9707740461192
+      internalID: -106692962
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: police_sprites_19
+      rect:
+        serializedVersion: 2
+        x: 458
+        y: 354
+        width: 20
+        height: 25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a44f4668ca5191b4d866a8b587be179a
+      internalID: -2093391961
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: police_sprites_20
+      rect:
+        serializedVersion: 2
+        x: 481
+        y: 353
+        width: 20
+        height: 25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 47b0cf0451ebab54a8ff08f5fd55e8af
+      internalID: -979226988
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: police_sprites_21
+      rect:
+        serializedVersion: 2
+        x: 7
+        y: 322
+        width: 11
+        height: 23
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f2a837d7b5cfee344943ee195b7a12c3
+      internalID: 1393096937
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: police_sprites_22
+      rect:
+        serializedVersion: 2
+        x: 31
+        y: 322
+        width: 11
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4b6d637423a2d7c47bb9804089ddd949
+      internalID: 792347021
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: police_sprites_23
+      rect:
+        serializedVersion: 2
+        x: 55
+        y: 322
+        width: 11
+        height: 23
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: edcc6b2b60d5bf34bbadcb9ad63a2725
+      internalID: 1645796434
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: police_sprites_24
+      rect:
+        serializedVersion: 2
+        x: 76
+        y: 322
+        width: 15
+        height: 25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d4233d67d4669f741ad00012e88f2ec2
+      internalID: -2145791745
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: police_sprites_25
+      rect:
+        serializedVersion: 2
+        x: 101
+        y: 322
+        width: 14
+        height: 26
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7c1694bd0c322c247b2ced4fb537c08f
+      internalID: 1327912659
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: police_sprites_26
+      rect:
+        serializedVersion: 2
+        x: 124
+        y: 322
+        width: 15
+        height: 25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8c8c449133cf87645b97e28c41821c95
+      internalID: 626384502
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: police_sprites_27
+      rect:
+        serializedVersion: 2
+        x: 151
+        y: 322
+        width: 11
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 34e6758f6ead6a44da43c35786840bad
+      internalID: 1361220040
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: police_sprites_28
+      rect:
+        serializedVersion: 2
+        x: 175
+        y: 322
+        width: 11
+        height: 25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 54c176e153ebe6f43a192830a97acf53
+      internalID: -118453951
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: police_sprites_29
+      rect:
+        serializedVersion: 2
+        x: 199
+        y: 322
+        width: 11
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2fab2bdaeaa1643479383cafaaad52d8
+      internalID: -465053427
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: police_sprites_30
+      rect:
+        serializedVersion: 2
+        x: 221
+        y: 322
+        width: 14
+        height: 25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 67b7639bb9cb61f4cb7c6dfca7d12d0f
+      internalID: 678942595
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: police_sprites_31
+      rect:
+        serializedVersion: 2
+        x: 245
+        y: 322
+        width: 14
+        height: 26
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 85aea49db53f94e41a7cc308100f7464
+      internalID: -587595601
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: police_sprites_32
+      rect:
+        serializedVersion: 2
+        x: 269
+        y: 322
+        width: 14
+        height: 25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 66f984939fab679409db67e6e51c61e4
+      internalID: 731919201
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: police_sprites_33
+      rect:
+        serializedVersion: 2
+        x: 295
+        y: 322
+        width: 12
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 63d787509ab395c47b8247adf719def9
+      internalID: 577194003
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: police_sprites_34
+      rect:
+        serializedVersion: 2
+        x: 319
+        y: 322
+        width: 12
+        height: 25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 84927eb441a7b924680893fc6a40ddd7
+      internalID: -925237212
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: police_sprites_35
+      rect:
+        serializedVersion: 2
+        x: 343
+        y: 322
+        width: 12
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f8276579da2527940a5fbb3aa238631b
+      internalID: -1191810412
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: police_sprites_36
+      rect:
+        serializedVersion: 2
+        x: 363
+        y: 322
+        width: 16
+        height: 25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 607342aa8e79a0e4e990c3f7c356f11e
+      internalID: -2042199028
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: police_sprites_37
+      rect:
+        serializedVersion: 2
+        x: 388
+        y: 322
+        width: 15
+        height: 26
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e60f882aabc333e439c3ffc980d37e93
+      internalID: -1044400021
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: police_sprites_38
+      rect:
+        serializedVersion: 2
+        x: 413
+        y: 322
+        width: 14
+        height: 25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5e09799fc379d4148a37df58472705b9
+      internalID: -480139543
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: police_sprites_39
+      rect:
+        serializedVersion: 2
+        x: 439
+        y: 322
+        width: 12
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 18d26b3ae5174df45a131c3805b5b6c8
+      internalID: 344810426
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: police_sprites_40
+      rect:
+        serializedVersion: 2
+        x: 463
+        y: 322
+        width: 12
+        height: 25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b776137a151b80a4487767fe9abde1e7
+      internalID: 965288899
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: police_sprites_41
+      rect:
+        serializedVersion: 2
+        x: 487
+        y: 322
+        width: 12
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a09ff459281b4644a868df70fde5219e
+      internalID: 1783705565
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: police_sprites_42
+      rect:
+        serializedVersion: 2
+        x: 4
+        y: 289
+        width: 15
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bdea6c08f7f63a8448caa9ddaec50ad2
+      internalID: 121716350
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: police_sprites_43
+      rect:
+        serializedVersion: 2
+        x: 27
+        y: 290
+        width: 18
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 07a8a0547ec576f45aa4d4d65547e429
+      internalID: -1730193501
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: police_sprites_44
+      rect:
+        serializedVersion: 2
+        x: 53
+        y: 289
+        width: 15
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 60fc657795942504c9cfb56c1fbc9d55
+      internalID: 1145800378
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: police_sprites_45
+      rect:
+        serializedVersion: 2
+        x: 77
+        y: 289
+        width: 14
+        height: 26
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8311795be76563348b6b4be84e3f71e1
+      internalID: 1732131898
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: police_sprites_46
+      rect:
+        serializedVersion: 2
+        x: 100
+        y: 290
+        width: 16
+        height: 26
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1e07387ed25d1e3418922ff47596dd12
+      internalID: -1027942758
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: police_sprites_47
+      rect:
+        serializedVersion: 2
+        x: 125
+        y: 289
+        width: 14
+        height: 26
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b8f402a6d0a45a249a27f304a1003776
+      internalID: 1553972749
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: police_sprites_48
+      rect:
+        serializedVersion: 2
+        x: 147
+        y: 289
+        width: 17
+        height: 25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: aa6f00fdf9da0a74389264702befa0b0
+      internalID: -564242976
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: police_sprites_49
+      rect:
+        serializedVersion: 2
+        x: 170
+        y: 290
+        width: 20
+        height: 25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 09cb7133efaf9004a976f410ee09172a
+      internalID: 1837796914
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: police_sprites_50
+      rect:
+        serializedVersion: 2
+        x: 196
+        y: 289
+        width: 17
+        height: 25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e46999cc829d88b4c8539f6613b1576e
+      internalID: 546690163
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: police_sprites_51
+      rect:
+        serializedVersion: 2
+        x: 220
+        y: 289
+        width: 15
+        height: 26
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ba31e5d2268b37d40997c1d949c9c9bb
+      internalID: -423109455
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: police_sprites_52
+      rect:
+        serializedVersion: 2
+        x: 243
+        y: 290
+        width: 18
+        height: 26
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8205ef991fe40a3459effa36c9ac4f55
+      internalID: 911316588
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: police_sprites_53
+      rect:
+        serializedVersion: 2
+        x: 269
+        y: 289
+        width: 15
+        height: 26
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 006fdd8507090004085c0a9a216bf950
+      internalID: 2085826146
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: police_sprites_54
+      rect:
+        serializedVersion: 2
+        x: 292
+        y: 289
+        width: 15
+        height: 25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b9cb527bcd2e4c7468fbc9fcc729275e
+      internalID: -1492967983
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: police_sprites_55
+      rect:
+        serializedVersion: 2
+        x: 315
+        y: 290
+        width: 18
+        height: 25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c5716d464c7a64c43a1659720a329aa3
+      internalID: -1347855921
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: police_sprites_56
+      rect:
+        serializedVersion: 2
+        x: 341
+        y: 289
+        width: 15
+        height: 25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 26ee2db34bef63a4f9aa1f389a6945af
+      internalID: -174492292
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: police_sprites_57
+      rect:
+        serializedVersion: 2
+        x: 365
+        y: 289
+        width: 14
+        height: 26
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 68b144a75b3b0c247950911053b441bd
+      internalID: -840826051
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: police_sprites_58
+      rect:
+        serializedVersion: 2
+        x: 388
+        y: 290
+        width: 16
+        height: 26
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: db540b54a54470d468c6368b325c37b5
+      internalID: -1683260850
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: police_sprites_59
+      rect:
+        serializedVersion: 2
+        x: 413
+        y: 289
+        width: 14
+        height: 26
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ee0ea317de494944db99c464f69b24db
+      internalID: -1728551435
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: police_sprites_60
+      rect:
+        serializedVersion: 2
+        x: 435
+        y: 289
+        width: 17
+        height: 25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1a8331e509d24a2469e9e3bc75d75366
+      internalID: -172538348
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: police_sprites_61
+      rect:
+        serializedVersion: 2
+        x: 458
+        y: 290
+        width: 20
+        height: 25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6f7a6a3716b27c74da441cea2553f3ea
+      internalID: -602744588
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: police_sprites_62
+      rect:
+        serializedVersion: 2
+        x: 484
+        y: 289
+        width: 17
+        height: 25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1a99523cabc418c4a86dfa409490a36b
+      internalID: 199932772
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: police_sprites_63
+      rect:
+        serializedVersion: 2
+        x: 5
+        y: 258
+        width: 12
+        height: 23
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 92e13cc2e8f9a66498053802d6fd5a8c
+      internalID: 920660787
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: police_sprites_64
+      rect:
+        serializedVersion: 2
+        x: 30
+        y: 258
+        width: 11
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3e54310b8eb9dfc459d3e55cc475e96a
+      internalID: -43626510
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: police_sprites_65
+      rect:
+        serializedVersion: 2
+        x: 54
+        y: 258
+        width: 11
+        height: 23
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1e8f91a104c641e49bf65f87124cc930
+      internalID: 244147985
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: police_sprites_66
+      rect:
+        serializedVersion: 2
+        x: 77
+        y: 258
+        width: 15
+        height: 25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 48b3c53543ea5ab44b81f6a4b3aa3ef8
+      internalID: -200185441
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: police_sprites_67
+      rect:
+        serializedVersion: 2
+        x: 101
+        y: 258
+        width: 14
+        height: 26
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 01ad98b79e52d2441b2679eb4c576ed9
+      internalID: -1107355648
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: police_sprites_68
+      rect:
+        serializedVersion: 2
+        x: 125
+        y: 258
+        width: 15
+        height: 25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 08d4cde448a09024181c30eca2b127a3
+      internalID: -159539813
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: police_sprites_69
+      rect:
+        serializedVersion: 2
+        x: 150
+        y: 258
+        width: 11
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d53ceff6e8653fb4c943ba1a9e344afd
+      internalID: 1411977474
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: police_sprites_70
+      rect:
+        serializedVersion: 2
+        x: 174
+        y: 258
+        width: 11
+        height: 25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3233504f04729fb4e863e9c249e4c72d
+      internalID: 440097605
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: police_sprites_71
+      rect:
+        serializedVersion: 2
+        x: 198
+        y: 258
+        width: 11
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c5996e548d17ec441b5d5f4a075a1f73
+      internalID: 491650721
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: police_sprites_72
+      rect:
+        serializedVersion: 2
+        x: 221
+        y: 258
+        width: 14
+        height: 25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6b7b621c7e3783c40b695b417f546fa2
+      internalID: -130142266
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: police_sprites_73
+      rect:
+        serializedVersion: 2
+        x: 245
+        y: 258
+        width: 14
+        height: 26
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 41d81c31fdc252a4aab2a3ee29dac307
+      internalID: 1224082339
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: police_sprites_74
+      rect:
+        serializedVersion: 2
+        x: 269
+        y: 258
+        width: 14
+        height: 25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 272e7a3ebbb48114b855306e6f53b418
+      internalID: 1828158152
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: police_sprites_75
+      rect:
+        serializedVersion: 2
+        x: 294
+        y: 258
+        width: 11
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fb0da72af31b3424594bdfbc94e127aa
+      internalID: -1453278532
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: police_sprites_76
+      rect:
+        serializedVersion: 2
+        x: 317
+        y: 258
+        width: 12
+        height: 25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a5707b6ffc451bd4594d0df74f5619f9
+      internalID: -1353390776
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: police_sprites_77
+      rect:
+        serializedVersion: 2
+        x: 341
+        y: 258
+        width: 12
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f963a588dc6eda8468251771304f363c
+      internalID: 2130660419
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: police_sprites_78
+      rect:
+        serializedVersion: 2
+        x: 365
+        y: 258
+        width: 14
+        height: 25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3fac3813d2b9b46449f770d63850b9fc
+      internalID: -1673185171
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: police_sprites_79
+      rect:
+        serializedVersion: 2
+        x: 389
+        y: 258
+        width: 15
+        height: 26
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cb3bbb42b60137e449b18a9d57005364
+      internalID: 1770292758
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: police_sprites_80
+      rect:
+        serializedVersion: 2
+        x: 413
+        y: 258
+        width: 16
+        height: 25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 919aeb115c8ffee448367573cc2dc21b
+      internalID: -481439112
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: police_sprites_81
+      rect:
+        serializedVersion: 2
+        x: 437
+        y: 258
+        width: 12
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f48a9eb0792e8024da28d285f2c1d6e5
+      internalID: 1601979194
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: police_sprites_82
+      rect:
+        serializedVersion: 2
+        x: 461
+        y: 258
+        width: 12
+        height: 25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c06314e160aae4b44ac199fe2ea8411b
+      internalID: -1554888676
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: police_sprites_83
+      rect:
+        serializedVersion: 2
+        x: 485
+        y: 258
+        width: 12
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 40bb5b9227dbd874d8566e318dc39440
+      internalID: 1760791935
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: police_sprites_84
+      rect:
+        serializedVersion: 2
+        x: 4
+        y: 225
+        width: 18
+        height: 26
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 38e9a91cf5704d840b064d44d839b096
+      internalID: -634974459
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: police_sprites_85
+      rect:
+        serializedVersion: 2
+        x: 27
+        y: 226
+        width: 18
+        height: 26
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b63e2e13d2abdfa4b94d2cea6d2a2cbe
+      internalID: 409192475
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: police_sprites_86
+      rect:
+        serializedVersion: 2
+        x: 50
+        y: 225
+        width: 18
+        height: 26
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b0439241cc7170f4f9ba240cb48185c6
+      internalID: -1131675693
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: police_sprites_87
+      rect:
+        serializedVersion: 2
+        x: 77
+        y: 225
+        width: 16
+        height: 26
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cad19a9cd10a6a546ba9c0f6afb54aee
+      internalID: -1814962139
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: police_sprites_88
+      rect:
+        serializedVersion: 2
+        x: 100
+        y: 226
+        width: 16
+        height: 26
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2cc1d0872aabb5a41903a61e49620645
+      internalID: 1444376289
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: police_sprites_89
+      rect:
+        serializedVersion: 2
+        x: 123
+        y: 225
+        width: 16
+        height: 26
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e31c6c999e462f046af709a0c970c03e
+      internalID: -116624515
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: police_sprites_90
+      rect:
+        serializedVersion: 2
+        x: 147
+        y: 225
+        width: 20
+        height: 27
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bb2d236ee1e6c8f4f974704846623829
+      internalID: -790838098
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: police_sprites_91
+      rect:
+        serializedVersion: 2
+        x: 170
+        y: 226
+        width: 20
+        height: 27
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: dc46198d899157b4f98289b3cf606ebe
+      internalID: -1615861562
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: police_sprites_92
+      rect:
+        serializedVersion: 2
+        x: 193
+        y: 225
+        width: 20
+        height: 27
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fcf659b102881c44cb35d25ab02bdc40
+      internalID: -205635532
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: police_sprites_93
+      rect:
+        serializedVersion: 2
+        x: 220
+        y: 225
+        width: 18
+        height: 26
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1063b5068ba76eb4e8266c7f94a0990d
+      internalID: 720613242
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: police_sprites_94
+      rect:
+        serializedVersion: 2
+        x: 243
+        y: 226
+        width: 18
+        height: 26
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 777a39dfdf88cca4f95cc2ae2b53141e
+      internalID: 1735652319
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: police_sprites_95
+      rect:
+        serializedVersion: 2
+        x: 266
+        y: 225
+        width: 18
+        height: 26
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d870c4fc7ba80b14b8d1c99893626490
+      internalID: -330250736
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: police_sprites_96
+      rect:
+        serializedVersion: 2
+        x: 292
+        y: 225
+        width: 18
+        height: 26
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f4fbb4b0c3513564cbe7714b96fd6b99
+      internalID: 1260199082
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: police_sprites_97
+      rect:
+        serializedVersion: 2
+        x: 315
+        y: 226
+        width: 18
+        height: 26
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e8ef224fdc2eac843becab6c7db29059
+      internalID: 497902539
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: police_sprites_98
+      rect:
+        serializedVersion: 2
+        x: 338
+        y: 225
+        width: 18
+        height: 26
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 06257e51023dea3498f1847685ef2871
+      internalID: 796312685
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: police_sprites_99
+      rect:
+        serializedVersion: 2
+        x: 365
+        y: 225
+        width: 16
+        height: 26
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d5221ec6b0b31fb42a8fe456ae10cefc
+      internalID: 114624994
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: police_sprites_100
+      rect:
+        serializedVersion: 2
+        x: 388
+        y: 226
+        width: 16
+        height: 26
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f1081e041574fc643b5d97117e88ced2
+      internalID: 2145727922
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: police_sprites_101
+      rect:
+        serializedVersion: 2
+        x: 411
+        y: 225
+        width: 16
+        height: 26
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b3f4162bfb698964d946efd2ea79215e
+      internalID: 1602279063
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: police_sprites_102
+      rect:
+        serializedVersion: 2
+        x: 435
+        y: 225
+        width: 20
+        height: 27
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 63eaf5e0c7eb6e146b42b56fcd9169a2
+      internalID: -230824032
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: police_sprites_103
+      rect:
+        serializedVersion: 2
+        x: 458
+        y: 226
+        width: 20
+        height: 27
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f45ecd90465b1dc43857c1cb490e6885
+      internalID: 1654928076
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: police_sprites_104
+      rect:
+        serializedVersion: 2
+        x: 481
+        y: 225
+        width: 20
+        height: 27
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7603f803e16aa3b4ea61101b058a7d8c
+      internalID: 108149971
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: police_sprites_105
+      rect:
+        serializedVersion: 2
+        x: 6
+        y: 194
+        width: 13
+        height: 25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c6d00ba16632e4f4aaf767f43e856c2a
+      internalID: 1264736379
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: police_sprites_106
+      rect:
+        serializedVersion: 2
+        x: 30
+        y: 194
+        width: 13
+        height: 26
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ff8979d7c115d4847a86f30b3d59ebac
+      internalID: -527816857
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: police_sprites_107
+      rect:
+        serializedVersion: 2
+        x: 54
+        y: 194
+        width: 13
+        height: 25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ea3c6985fa5720b418d381bed349c493
+      internalID: 753024233
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: police_sprites_108
+      rect:
+        serializedVersion: 2
+        x: 76
+        y: 194
+        width: 15
+        height: 25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e6629ca7245e47f44894f488be11cac4
+      internalID: 584432299
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: police_sprites_109
+      rect:
+        serializedVersion: 2
+        x: 101
+        y: 194
+        width: 14
+        height: 26
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4ccc0eef1de5bff4a84bedca71e879d9
+      internalID: -2007491464
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: police_sprites_110
+      rect:
+        serializedVersion: 2
+        x: 124
+        y: 194
+        width: 15
+        height: 25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 18c2d0ee03b2c8a4ba9f8a3a9fe02d50
+      internalID: 635349875
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: police_sprites_111
+      rect:
+        serializedVersion: 2
+        x: 151
+        y: 194
+        width: 13
+        height: 26
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 21e30f9e29d1d814590c302b6cb47897
+      internalID: -1441397905
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: police_sprites_112
+      rect:
+        serializedVersion: 2
+        x: 175
+        y: 194
+        width: 13
+        height: 27
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 999aa1a3deb81b744a2d103179b85593
+      internalID: -190777173
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: police_sprites_113
+      rect:
+        serializedVersion: 2
+        x: 199
+        y: 194
+        width: 13
+        height: 26
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cfe3b35065b0e274da009d17d24507aa
+      internalID: -436580898
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: police_sprites_114
+      rect:
+        serializedVersion: 2
+        x: 222
+        y: 194
+        width: 13
+        height: 25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4e9696d6790c04d41b13f237eaeadb21
+      internalID: 2101548976
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: police_sprites_115
+      rect:
+        serializedVersion: 2
+        x: 246
+        y: 194
+        width: 13
+        height: 26
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2b5edc965610e0c40adb2bd31fd41f23
+      internalID: -1568466474
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: police_sprites_116
+      rect:
+        serializedVersion: 2
+        x: 270
+        y: 194
+        width: 13
+        height: 25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 82118ced8aae23949a47d532d127b152
+      internalID: 266720104
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: police_sprites_117
+      rect:
+        serializedVersion: 2
+        x: 294
+        y: 194
+        width: 13
+        height: 25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: dd999c1ee0490a44ba708bad0df5b88b
+      internalID: -2098280912
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: police_sprites_118
+      rect:
+        serializedVersion: 2
+        x: 318
+        y: 194
+        width: 13
+        height: 26
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e1fa25cdf3cc5b2438cb2858142eeb7a
+      internalID: 200208239
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: police_sprites_119
+      rect:
+        serializedVersion: 2
+        x: 342
+        y: 194
+        width: 13
+        height: 25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f456915333661f2458204561f1e5b330
+      internalID: 332233326
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: police_sprites_120
+      rect:
+        serializedVersion: 2
+        x: 366
+        y: 194
+        width: 13
+        height: 25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 328758a9803962549b6e23e3f30e38dd
+      internalID: -1937290547
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: police_sprites_121
+      rect:
+        serializedVersion: 2
+        x: 390
+        y: 194
+        width: 13
+        height: 26
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bddbb52819d9f4a4d9e1f3acc88bcd1a
+      internalID: 1454908963
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: police_sprites_122
+      rect:
+        serializedVersion: 2
+        x: 414
+        y: 194
+        width: 13
+        height: 25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5711ac0ba9461a841a74ee0a2ceedbb9
+      internalID: 1930749620
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: police_sprites_123
+      rect:
+        serializedVersion: 2
+        x: 439
+        y: 194
+        width: 13
+        height: 26
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f7de6403f1eeaca4a87c669ca41ebcf5
+      internalID: -1113166668
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: police_sprites_124
+      rect:
+        serializedVersion: 2
+        x: 463
+        y: 194
+        width: 13
+        height: 27
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3e0180dedfe0f284ab94fba4b24946a8
+      internalID: 1854470211
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: police_sprites_125
+      rect:
+        serializedVersion: 2
+        x: 487
+        y: 194
+        width: 13
+        height: 26
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 381c71ace5016e2448ddeccbbc8361c1
+      internalID: 23601638
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: police_sprites_126
+      rect:
+        serializedVersion: 2
+        x: 4
+        y: 161
+        width: 15
+        height: 26
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f7df59d047419dc4095aee033dc3a19d
+      internalID: -1553728228
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: police_sprites_127
+      rect:
+        serializedVersion: 2
+        x: 27
+        y: 162
+        width: 18
+        height: 26
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6fdac13890fe8a644b69ad854fac6341
+      internalID: 1872349767
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: police_sprites_128
+      rect:
+        serializedVersion: 2
+        x: 53
+        y: 161
+        width: 15
+        height: 26
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2dc64c2cfd6796645ac3fed59f889048
+      internalID: 395795517
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: police_sprites_129
+      rect:
+        serializedVersion: 2
+        x: 77
+        y: 161
+        width: 14
+        height: 26
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 63e49fc15bdfb31429f5fbfaafd02379
+      internalID: 1576163459
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: police_sprites_130
+      rect:
+        serializedVersion: 2
+        x: 100
+        y: 162
+        width: 16
+        height: 26
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4f492bdb450e64249a0d0aeffc3387a5
+      internalID: -114990262
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: police_sprites_131
+      rect:
+        serializedVersion: 2
+        x: 125
+        y: 161
+        width: 14
+        height: 26
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3f007ac94ff1c2d48bf52338b375e28e
+      internalID: 1260795464
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: police_sprites_132
+      rect:
+        serializedVersion: 2
+        x: 147
+        y: 161
+        width: 17
+        height: 27
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e43c0af971082d54d8d4b1734ed39bf5
+      internalID: 503788292
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: police_sprites_133
+      rect:
+        serializedVersion: 2
+        x: 170
+        y: 162
+        width: 20
+        height: 27
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2787c31960ce433429bb6498de596f76
+      internalID: 612236187
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: police_sprites_134
+      rect:
+        serializedVersion: 2
+        x: 196
+        y: 161
+        width: 17
+        height: 27
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e6d59d73fb1ba6442885085e96d2765f
+      internalID: 452005314
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: police_sprites_135
+      rect:
+        serializedVersion: 2
+        x: 220
+        y: 161
+        width: 15
+        height: 26
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cfbe18c6bc046864eb785b9fee985925
+      internalID: -1167122097
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: police_sprites_136
+      rect:
+        serializedVersion: 2
+        x: 243
+        y: 162
+        width: 18
+        height: 26
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8f4c86c0b7219e34facbf85f04a9dcbf
+      internalID: 98768072
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: police_sprites_137
+      rect:
+        serializedVersion: 2
+        x: 269
+        y: 161
+        width: 15
+        height: 26
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 796b53179efae9b42a585ac8cc6663db
+      internalID: -1732332844
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: police_sprites_138
+      rect:
+        serializedVersion: 2
+        x: 292
+        y: 161
+        width: 15
+        height: 26
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d077cffc732b32846a5a49ae630b31ef
+      internalID: 1783688086
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: police_sprites_139
+      rect:
+        serializedVersion: 2
+        x: 315
+        y: 162
+        width: 18
+        height: 26
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cde6628cacab6c34a9795188484bf867
+      internalID: 1108105760
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: police_sprites_140
+      rect:
+        serializedVersion: 2
+        x: 341
+        y: 161
+        width: 15
+        height: 26
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0748d658ef582ca46912088e84d06e89
+      internalID: 1947357352
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: police_sprites_141
+      rect:
+        serializedVersion: 2
+        x: 365
+        y: 161
+        width: 14
+        height: 26
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6f2e5a75ab29ffb4689d76ffc47993e5
+      internalID: 434123398
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: police_sprites_142
+      rect:
+        serializedVersion: 2
+        x: 388
+        y: 162
+        width: 16
+        height: 26
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8f515fa1cef34cb4eb442c57e8dd6f89
+      internalID: 1984047388
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: police_sprites_143
+      rect:
+        serializedVersion: 2
+        x: 413
+        y: 161
+        width: 14
+        height: 26
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fb5115b4ec5896049ba890422c1f7cb9
+      internalID: 153620642
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: police_sprites_144
+      rect:
+        serializedVersion: 2
+        x: 435
+        y: 161
+        width: 17
+        height: 27
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f34d7097ccb7e4d49b05e0fc2f3a3cc9
+      internalID: 617031472
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: police_sprites_145
+      rect:
+        serializedVersion: 2
+        x: 458
+        y: 162
+        width: 20
+        height: 27
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0a3167b03e7ac1a48abd7b72cf89a577
+      internalID: -838765825
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: police_sprites_146
+      rect:
+        serializedVersion: 2
+        x: 484
+        y: 161
+        width: 17
+        height: 27
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 64a5101096baafa4bb7a5fd4af6ec257
+      internalID: 256831610
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: police_sprites_147
+      rect:
+        serializedVersion: 2
+        x: 5
+        y: 130
+        width: 13
+        height: 25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3e28a1ef93d9d294ead3a09421f1402e
+      internalID: 56811514
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: police_sprites_148
+      rect:
+        serializedVersion: 2
+        x: 29
+        y: 130
+        width: 13
+        height: 26
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7b5479a076442fd46abd0774fa2bdca9
+      internalID: -1345216515
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: police_sprites_149
+      rect:
+        serializedVersion: 2
+        x: 53
+        y: 130
+        width: 13
+        height: 25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 083b75a57049d674283a614112fd4844
+      internalID: -1460638044
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: police_sprites_150
+      rect:
+        serializedVersion: 2
+        x: 77
+        y: 130
+        width: 15
+        height: 25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 50997c8af55b0574b94f342d9d09d134
+      internalID: -1420322400
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: police_sprites_151
+      rect:
+        serializedVersion: 2
+        x: 101
+        y: 130
+        width: 14
+        height: 26
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2d787c12284761e4c93d5678a069fb65
+      internalID: 1072796814
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: police_sprites_152
+      rect:
+        serializedVersion: 2
+        x: 125
+        y: 130
+        width: 15
+        height: 25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 543c9405e86f3fe42a9d820345dd90ee
+      internalID: -372767943
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: police_sprites_153
+      rect:
+        serializedVersion: 2
+        x: 148
+        y: 130
+        width: 13
+        height: 26
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 34aa6df577998f747ad90e15dcd7877d
+      internalID: 429651142
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: police_sprites_154
+      rect:
+        serializedVersion: 2
+        x: 172
+        y: 130
+        width: 13
+        height: 27
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 596e745792cc5854c8588bd85787a900
+      internalID: -1900695503
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: police_sprites_155
+      rect:
+        serializedVersion: 2
+        x: 196
+        y: 130
+        width: 13
+        height: 26
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 03e223ead996841438a37a9e71cb6633
+      internalID: -288020075
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: police_sprites_156
+      rect:
+        serializedVersion: 2
+        x: 221
+        y: 130
+        width: 13
+        height: 25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 213e9e424857676439234523f5c884f9
+      internalID: -1707241826
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: police_sprites_157
+      rect:
+        serializedVersion: 2
+        x: 245
+        y: 130
+        width: 13
+        height: 26
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: df85e7c753c633f4f8502e5d88932a62
+      internalID: -949526689
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: police_sprites_158
+      rect:
+        serializedVersion: 2
+        x: 269
+        y: 130
+        width: 13
+        height: 25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ca5b333593f988e4f99ed2347eb37cbc
+      internalID: 1229560993
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: police_sprites_159
+      rect:
+        serializedVersion: 2
+        x: 293
+        y: 130
+        width: 13
+        height: 25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d173c0d48639d194fad0bf39ff2a0e89
+      internalID: -92408011
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: police_sprites_160
+      rect:
+        serializedVersion: 2
+        x: 317
+        y: 130
+        width: 13
+        height: 26
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8385bf26210e2e34ba399408c749f0ba
+      internalID: 2005090601
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: police_sprites_161
+      rect:
+        serializedVersion: 2
+        x: 341
+        y: 130
+        width: 13
+        height: 25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: da2c5879b7a1e05428bb3f2a302fd810
+      internalID: -722291605
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: police_sprites_162
+      rect:
+        serializedVersion: 2
+        x: 365
+        y: 130
+        width: 13
+        height: 25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 507dbd9d172e04a47a88fabe14821494
+      internalID: -331454806
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: police_sprites_163
+      rect:
+        serializedVersion: 2
+        x: 389
+        y: 130
+        width: 13
+        height: 26
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3427bb7243b0a6c42bcef03f98622866
+      internalID: -473482808
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: police_sprites_164
+      rect:
+        serializedVersion: 2
+        x: 413
+        y: 130
+        width: 13
+        height: 25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ae080098ed1c26448b281beb8407cfed
+      internalID: 269630828
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: police_sprites_165
+      rect:
+        serializedVersion: 2
+        x: 436
+        y: 130
+        width: 13
+        height: 26
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 875ec9469e28c694ea57de51ae9518ce
+      internalID: 709573021
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: police_sprites_166
+      rect:
+        serializedVersion: 2
+        x: 460
+        y: 130
+        width: 13
+        height: 27
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c6a8733c2a3816443b7147b1813fd5ab
+      internalID: -814385175
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: police_sprites_167
+      rect:
+        serializedVersion: 2
+        x: 484
+        y: 130
+        width: 13
+        height: 26
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5fd5155a744e5734e91d0e28630d3864
+      internalID: -967710954
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: police_sprites_168
+      rect:
+        serializedVersion: 2
+        x: 4
+        y: 97
+        width: 18
+        height: 26
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 51afc12b0e2a22c4790cd6625255b02f
+      internalID: 279105415
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: police_sprites_169
+      rect:
+        serializedVersion: 2
+        x: 27
+        y: 98
+        width: 18
+        height: 26
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6c353d2d14a332c479b87e8ea4722c7d
+      internalID: 839584590
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: police_sprites_170
+      rect:
+        serializedVersion: 2
+        x: 50
+        y: 97
+        width: 18
+        height: 26
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f488580c7d4b61a4a90573e7e3153f95
+      internalID: -451176072
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: police_sprites_171
+      rect:
+        serializedVersion: 2
+        x: 76
+        y: 97
+        width: 18
+        height: 25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 57517983698800049ba0c9669000c7e1
+      internalID: 1286645651
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: police_sprites_172
+      rect:
+        serializedVersion: 2
+        x: 99
+        y: 98
+        width: 18
+        height: 25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fbd6c67abb92bd54a84cdaa6f6a14a04
+      internalID: -1303505003
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: police_sprites_173
+      rect:
+        serializedVersion: 2
+        x: 122
+        y: 97
+        width: 18
+        height: 25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1c35a329b9a77bb45ac1940d945febfb
+      internalID: -200923914
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: police_sprites_174
+      rect:
+        serializedVersion: 2
+        x: 148
+        y: 97
+        width: 18
+        height: 25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fd2c6bab07bc76d4db8a743b8097f820
+      internalID: -1203261382
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: police_sprites_175
+      rect:
+        serializedVersion: 2
+        x: 171
+        y: 98
+        width: 18
+        height: 25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6e5f72b927850774db4eb42f4225ea7d
+      internalID: -1786519303
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: police_sprites_176
+      rect:
+        serializedVersion: 2
+        x: 194
+        y: 97
+        width: 18
+        height: 25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 034f76e4bc4cad7489f65c57fb1b16b0
+      internalID: -780785148
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: police_sprites_177
+      rect:
+        serializedVersion: 2
+        x: 221
+        y: 97
+        width: 16
+        height: 25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 340bc0c3911d79a4782b640dea07c662
+      internalID: 684246979
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: police_sprites_178
+      rect:
+        serializedVersion: 2
+        x: 244
+        y: 98
+        width: 16
+        height: 25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f3c6dfa1a88ff2c4cb590695afd44095
+      internalID: -795491969
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: police_sprites_179
+      rect:
+        serializedVersion: 2
+        x: 267
+        y: 97
+        width: 16
+        height: 25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5851a2948b3394042b3ea79dbdaabdb9
+      internalID: -1125758480
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: police_sprites_180
+      rect:
+        serializedVersion: 2
+        x: 292
+        y: 97
+        width: 17
+        height: 25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: adf27a8dc7245264fa1401caab3353ca
+      internalID: 1125912543
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: police_sprites_181
+      rect:
+        serializedVersion: 2
+        x: 316
+        y: 98
+        width: 16
+        height: 25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9e386c35dddace24b84e73ca5fc495af
+      internalID: 140054642
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: police_sprites_182
+      rect:
+        serializedVersion: 2
+        x: 339
+        y: 97
+        width: 17
+        height: 25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fc68425a9b864cc44aa1e5d05cc94012
+      internalID: 65471515
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: police_sprites_183
+      rect:
+        serializedVersion: 2
+        x: 5
+        y: 66
+        width: 14
+        height: 25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4df4713007369b6499933be96ad17161
+      internalID: 2141621951
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: police_sprites_184
+      rect:
+        serializedVersion: 2
+        x: 29
+        y: 66
+        width: 14
+        height: 26
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c5f98b2f5e1112d489e0a661a78ffd1e
+      internalID: 833247027
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: police_sprites_185
+      rect:
+        serializedVersion: 2
+        x: 53
+        y: 66
+        width: 14
+        height: 25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8f71a76a3693b4649a574fe25ea3c4c8
+      internalID: -1739718533
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: police_sprites_186
+      rect:
+        serializedVersion: 2
+        x: 78
+        y: 66
+        width: 12
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5fa98d5311876a445a52c8c501a1ea68
+      internalID: -1457103727
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: police_sprites_187
+      rect:
+        serializedVersion: 2
+        x: 102
+        y: 66
+        width: 12
+        height: 25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a0779033254e0a947acb6d4d0bde01d5
+      internalID: -1836141317
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: police_sprites_188
+      rect:
+        serializedVersion: 2
+        x: 126
+        y: 66
+        width: 12
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d6c0dacf7c667054cb8b60a67e909984
+      internalID: -1326950747
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: police_sprites_189
+      rect:
+        serializedVersion: 2
+        x: 151
+        y: 66
+        width: 12
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e83f1d9fd2d85a14b90707f12dacecd9
+      internalID: 1710479014
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: police_sprites_190
+      rect:
+        serializedVersion: 2
+        x: 175
+        y: 66
+        width: 12
+        height: 25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cea974963ff0a814db2776c032baf0f3
+      internalID: -1276980795
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: police_sprites_191
+      rect:
+        serializedVersion: 2
+        x: 199
+        y: 66
+        width: 12
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2d08fd44a87376a4d914db931ee0b781
+      internalID: -988258696
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: police_sprites_192
+      rect:
+        serializedVersion: 2
+        x: 221
+        y: 66
+        width: 14
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6c8964aaceff4b54bb9c8d43f311cd54
+      internalID: -287552654
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: police_sprites_193
+      rect:
+        serializedVersion: 2
+        x: 245
+        y: 66
+        width: 14
+        height: 25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4edacfbb6746e4b499e4853339c5fdd2
+      internalID: -1495765356
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: police_sprites_194
+      rect:
+        serializedVersion: 2
+        x: 269
+        y: 66
+        width: 13
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 336c0d52ae0af1d4297871269162ab3a
+      internalID: 325275350
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: police_sprites_195
+      rect:
+        serializedVersion: 2
+        x: 291
+        y: 66
+        width: 15
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ce2e1fb97143a524ab95855f8ff3860e
+      internalID: -237845591
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: police_sprites_196
+      rect:
+        serializedVersion: 2
+        x: 316
+        y: 66
+        width: 14
+        height: 25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b52abf4d5b9afeb4a8476b3195d8a5bb
+      internalID: -747561391
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: police_sprites_197
+      rect:
+        serializedVersion: 2
+        x: 341
+        y: 66
+        width: 13
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 01c228095b26eba44aecd38158aefc48
+      internalID: -703241916
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: police_sprites_198
+      rect:
+        serializedVersion: 2
+        x: 4
+        y: 33
+        width: 15
+        height: 26
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b0e5f223489546447808cb8222cba0c8
+      internalID: 456984906
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: police_sprites_199
+      rect:
+        serializedVersion: 2
+        x: 27
+        y: 34
+        width: 18
+        height: 26
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9188b3feb8a15264683f4fee06dfdac0
+      internalID: -452358704
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: police_sprites_200
+      rect:
+        serializedVersion: 2
+        x: 53
+        y: 33
+        width: 15
+        height: 26
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 382e2fdd852b5d24b878de7572258464
+      internalID: -132763585
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: police_sprites_201
+      rect:
+        serializedVersion: 2
+        x: 76
+        y: 33
+        width: 15
+        height: 25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8e3684d4aecccb344b3a8d470c69bd22
+      internalID: 394979446
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: police_sprites_202
+      rect:
+        serializedVersion: 2
+        x: 99
+        y: 34
+        width: 18
+        height: 25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9faf5a213352ceb41b074a542699f302
+      internalID: -1806710015
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: police_sprites_203
+      rect:
+        serializedVersion: 2
+        x: 125
+        y: 33
+        width: 15
+        height: 25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 05d38129953088346aecff0823a88da2
+      internalID: -8439099
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: police_sprites_204
+      rect:
+        serializedVersion: 2
+        x: 148
+        y: 33
+        width: 15
+        height: 25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 266daf626c529a44e8c8b4564710f3b7
+      internalID: -1633241106
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: police_sprites_205
+      rect:
+        serializedVersion: 2
+        x: 171
+        y: 34
+        width: 18
+        height: 25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f7c3a3c9dede00b48b4a7af02339d82a
+      internalID: -1951763436
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: police_sprites_206
+      rect:
+        serializedVersion: 2
+        x: 197
+        y: 33
+        width: 15
+        height: 25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8501b3078a45aba4fbf7d4eadaa87bdd
+      internalID: -137461938
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: police_sprites_207
+      rect:
+        serializedVersion: 2
+        x: 221
+        y: 33
+        width: 13
+        height: 25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3ee189be806d1b34f87136247299be41
+      internalID: -1220274821
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: police_sprites_208
+      rect:
+        serializedVersion: 2
+        x: 244
+        y: 34
+        width: 16
+        height: 25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 950e31358dbd20946941b82fc52033cf
+      internalID: 1308582335
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: police_sprites_209
+      rect:
+        serializedVersion: 2
+        x: 270
+        y: 33
+        width: 13
+        height: 25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bb94892fab1528d41934927248b2561d
+      internalID: 1696566228
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: police_sprites_210
+      rect:
+        serializedVersion: 2
+        x: 293
+        y: 33
+        width: 15
+        height: 25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: aaa6a3de44e620642a68a372195c3cef
+      internalID: 509227533
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: police_sprites_211
+      rect:
+        serializedVersion: 2
+        x: 316
+        y: 34
+        width: 16
+        height: 25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 44f56d802be9a964e9f446da03ea61de
+      internalID: -458573984
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: police_sprites_212
+      rect:
+        serializedVersion: 2
+        x: 340
+        y: 33
+        width: 15
+        height: 25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9e694e3703f8a7e4aa8661c1b82dc9fb
+      internalID: 1851252612
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: police_sprites_213
+      rect:
+        serializedVersion: 2
+        x: 5
+        y: 2
+        width: 14
+        height: 25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9781f35e786c14c4b93af676dcb68d96
+      internalID: -602723616
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: police_sprites_214
+      rect:
+        serializedVersion: 2
+        x: 29
+        y: 2
+        width: 14
+        height: 26
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e3da30ca2443cdf4887eeed0c39474b0
+      internalID: -1831239216
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: police_sprites_215
+      rect:
+        serializedVersion: 2
+        x: 53
+        y: 2
+        width: 14
+        height: 25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5682e55cf6116784a9483bee3fe0bf43
+      internalID: -1774297329
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: police_sprites_216
+      rect:
+        serializedVersion: 2
+        x: 78
+        y: 2
+        width: 12
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7531d399dc2113f42b08261c85b19a49
+      internalID: -967123724
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: police_sprites_217
+      rect:
+        serializedVersion: 2
+        x: 102
+        y: 2
+        width: 12
+        height: 25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 45fc2209c79f6b647afdb1212fa427c9
+      internalID: -1421945087
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: police_sprites_218
+      rect:
+        serializedVersion: 2
+        x: 126
+        y: 2
+        width: 12
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 52c0202e8d038f6469b12f9f60fd19b9
+      internalID: 1507547473
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: police_sprites_219
+      rect:
+        serializedVersion: 2
+        x: 149
+        y: 2
+        width: 12
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2cd5f5164ce1b4e44812aa45a7353155
+      internalID: 1473776736
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: police_sprites_220
+      rect:
+        serializedVersion: 2
+        x: 173
+        y: 2
+        width: 12
+        height: 25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5c67e6aac0d1eab40af6f3cf29d0c451
+      internalID: -1532882585
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: police_sprites_221
+      rect:
+        serializedVersion: 2
+        x: 197
+        y: 2
+        width: 12
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 71ebc9a8e2581d94095877eb45602b19
+      internalID: -1436671671
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: police_sprites_222
+      rect:
+        serializedVersion: 2
+        x: 222
+        y: 2
+        width: 13
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b3a1951aec2734a4d9e28209eed625b5
+      internalID: 258361230
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: police_sprites_223
+      rect:
+        serializedVersion: 2
+        x: 245
+        y: 2
+        width: 14
+        height: 25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a327aad2762552f4e93eedc3c585ed5c
+      internalID: 2117804191
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: police_sprites_224
+      rect:
+        serializedVersion: 2
+        x: 269
+        y: 2
+        width: 14
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ca7eb9982dcb4a540bcaf53867cda458
+      internalID: 950672792
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: police_sprites_225
+      rect:
+        serializedVersion: 2
+        x: 294
+        y: 2
+        width: 13
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 411ab64a8cb078140ad376539e8356ff
+      internalID: 1467633701
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: police_sprites_226
+      rect:
+        serializedVersion: 2
+        x: 318
+        y: 2
+        width: 14
+        height: 25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 24da223b9a1f44441957c67dea70d083
+      internalID: 1045216288
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: police_sprites_227
+      rect:
+        serializedVersion: 2
+        x: 342
+        y: 2
+        width: 15
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8e23295ea992a3e4b8ae8fda41d42cd4
+      internalID: 1821589433
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    nameFileIdTable:
+      police_sprites_0: -1874651467
+      police_sprites_1: -1723251074
+      police_sprites_10: 728960508
+      police_sprites_100: 2145727922
+      police_sprites_101: 1602279063
+      police_sprites_102: -230824032
+      police_sprites_103: 1654928076
+      police_sprites_104: 108149971
+      police_sprites_105: 1264736379
+      police_sprites_106: -527816857
+      police_sprites_107: 753024233
+      police_sprites_108: 584432299
+      police_sprites_109: -2007491464
+      police_sprites_11: -64134926
+      police_sprites_110: 635349875
+      police_sprites_111: -1441397905
+      police_sprites_112: -190777173
+      police_sprites_113: -436580898
+      police_sprites_114: 2101548976
+      police_sprites_115: -1568466474
+      police_sprites_116: 266720104
+      police_sprites_117: -2098280912
+      police_sprites_118: 200208239
+      police_sprites_119: 332233326
+      police_sprites_12: 1658718716
+      police_sprites_120: -1937290547
+      police_sprites_121: 1454908963
+      police_sprites_122: 1930749620
+      police_sprites_123: -1113166668
+      police_sprites_124: 1854470211
+      police_sprites_125: 23601638
+      police_sprites_126: -1553728228
+      police_sprites_127: 1872349767
+      police_sprites_128: 395795517
+      police_sprites_129: 1576163459
+      police_sprites_13: -1654981244
+      police_sprites_130: -114990262
+      police_sprites_131: 1260795464
+      police_sprites_132: 503788292
+      police_sprites_133: 612236187
+      police_sprites_134: 452005314
+      police_sprites_135: -1167122097
+      police_sprites_136: 98768072
+      police_sprites_137: -1732332844
+      police_sprites_138: 1783688086
+      police_sprites_139: 1108105760
+      police_sprites_14: 4257431
+      police_sprites_140: 1947357352
+      police_sprites_141: 434123398
+      police_sprites_142: 1984047388
+      police_sprites_143: 153620642
+      police_sprites_144: 617031472
+      police_sprites_145: -838765825
+      police_sprites_146: 256831610
+      police_sprites_147: 56811514
+      police_sprites_148: -1345216515
+      police_sprites_149: -1460638044
+      police_sprites_15: 1356938602
+      police_sprites_150: -1420322400
+      police_sprites_151: 1072796814
+      police_sprites_152: -372767943
+      police_sprites_153: 429651142
+      police_sprites_154: -1900695503
+      police_sprites_155: -288020075
+      police_sprites_156: -1707241826
+      police_sprites_157: -949526689
+      police_sprites_158: 1229560993
+      police_sprites_159: -92408011
+      police_sprites_16: 1474077117
+      police_sprites_160: 2005090601
+      police_sprites_161: -722291605
+      police_sprites_162: -331454806
+      police_sprites_163: -473482808
+      police_sprites_164: 269630828
+      police_sprites_165: 709573021
+      police_sprites_166: -814385175
+      police_sprites_167: -967710954
+      police_sprites_168: 279105415
+      police_sprites_169: 839584590
+      police_sprites_17: -1630233217
+      police_sprites_170: -451176072
+      police_sprites_171: 1286645651
+      police_sprites_172: -1303505003
+      police_sprites_173: -200923914
+      police_sprites_174: -1203261382
+      police_sprites_175: -1786519303
+      police_sprites_176: -780785148
+      police_sprites_177: 684246979
+      police_sprites_178: -795491969
+      police_sprites_179: -1125758480
+      police_sprites_18: -106692962
+      police_sprites_180: 1125912543
+      police_sprites_181: 140054642
+      police_sprites_182: 65471515
+      police_sprites_183: 2141621951
+      police_sprites_184: 833247027
+      police_sprites_185: -1739718533
+      police_sprites_186: -1457103727
+      police_sprites_187: -1836141317
+      police_sprites_188: -1326950747
+      police_sprites_189: 1710479014
+      police_sprites_19: -2093391961
+      police_sprites_190: -1276980795
+      police_sprites_191: -988258696
+      police_sprites_192: -287552654
+      police_sprites_193: -1495765356
+      police_sprites_194: 325275350
+      police_sprites_195: -237845591
+      police_sprites_196: -747561391
+      police_sprites_197: -703241916
+      police_sprites_198: 456984906
+      police_sprites_199: -452358704
+      police_sprites_2: 716647917
+      police_sprites_20: -979226988
+      police_sprites_200: -132763585
+      police_sprites_201: 394979446
+      police_sprites_202: -1806710015
+      police_sprites_203: -8439099
+      police_sprites_204: -1633241106
+      police_sprites_205: -1951763436
+      police_sprites_206: -137461938
+      police_sprites_207: -1220274821
+      police_sprites_208: 1308582335
+      police_sprites_209: 1696566228
+      police_sprites_21: 1393096937
+      police_sprites_210: 509227533
+      police_sprites_211: -458573984
+      police_sprites_212: 1851252612
+      police_sprites_213: -602723616
+      police_sprites_214: -1831239216
+      police_sprites_215: -1774297329
+      police_sprites_216: -967123724
+      police_sprites_217: -1421945087
+      police_sprites_218: 1507547473
+      police_sprites_219: 1473776736
+      police_sprites_22: 792347021
+      police_sprites_220: -1532882585
+      police_sprites_221: -1436671671
+      police_sprites_222: 258361230
+      police_sprites_223: 2117804191
+      police_sprites_224: 950672792
+      police_sprites_225: 1467633701
+      police_sprites_226: 1045216288
+      police_sprites_227: 1821589433
+      police_sprites_23: 1645796434
+      police_sprites_24: -2145791745
+      police_sprites_25: 1327912659
+      police_sprites_26: 626384502
+      police_sprites_27: 1361220040
+      police_sprites_28: -118453951
+      police_sprites_29: -465053427
+      police_sprites_3: -261672098
+      police_sprites_30: 678942595
+      police_sprites_31: -587595601
+      police_sprites_32: 731919201
+      police_sprites_33: 577194003
+      police_sprites_34: -925237212
+      police_sprites_35: -1191810412
+      police_sprites_36: -2042199028
+      police_sprites_37: -1044400021
+      police_sprites_38: -480139543
+      police_sprites_39: 344810426
+      police_sprites_4: -970460995
+      police_sprites_40: 965288899
+      police_sprites_41: 1783705565
+      police_sprites_42: 121716350
+      police_sprites_43: -1730193501
+      police_sprites_44: 1145800378
+      police_sprites_45: 1732131898
+      police_sprites_46: -1027942758
+      police_sprites_47: 1553972749
+      police_sprites_48: -564242976
+      police_sprites_49: 1837796914
+      police_sprites_5: 158341191
+      police_sprites_50: 546690163
+      police_sprites_51: -423109455
+      police_sprites_52: 911316588
+      police_sprites_53: 2085826146
+      police_sprites_54: -1492967983
+      police_sprites_55: -1347855921
+      police_sprites_56: -174492292
+      police_sprites_57: -840826051
+      police_sprites_58: -1683260850
+      police_sprites_59: -1728551435
+      police_sprites_6: 731684636
+      police_sprites_60: -172538348
+      police_sprites_61: -602744588
+      police_sprites_62: 199932772
+      police_sprites_63: 920660787
+      police_sprites_64: -43626510
+      police_sprites_65: 244147985
+      police_sprites_66: -200185441
+      police_sprites_67: -1107355648
+      police_sprites_68: -159539813
+      police_sprites_69: 1411977474
+      police_sprites_7: -1765661975
+      police_sprites_70: 440097605
+      police_sprites_71: 491650721
+      police_sprites_72: -130142266
+      police_sprites_73: 1224082339
+      police_sprites_74: 1828158152
+      police_sprites_75: -1453278532
+      police_sprites_76: -1353390776
+      police_sprites_77: 2130660419
+      police_sprites_78: -1673185171
+      police_sprites_79: 1770292758
+      police_sprites_8: 903701938
+      police_sprites_80: -481439112
+      police_sprites_81: 1601979194
+      police_sprites_82: -1554888676
+      police_sprites_83: 1760791935
+      police_sprites_84: -634974459
+      police_sprites_85: 409192475
+      police_sprites_86: -1131675693
+      police_sprites_87: -1814962139
+      police_sprites_88: 1444376289
+      police_sprites_89: -116624515
+      police_sprites_9: -160903876
+      police_sprites_90: -790838098
+      police_sprites_91: -1615861562
+      police_sprites_92: -205635532
+      police_sprites_93: 720613242
+      police_sprites_94: 1735652319
+      police_sprites_95: -330250736
+      police_sprites_96: 1260199082
+      police_sprites_97: 497902539
+      police_sprites_98: 796312685
+      police_sprites_99: 114624994
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
