@@ -260,7 +260,7 @@ PrefabInstance:
     - target: {fileID: 8575140804092506413, guid: daa376c659011e2438dd5688ca75221a, type: 3}
       propertyPath: _electricalBoard
       value: 
-      objectReference: {fileID: 0}
+      objectReference: {fileID: 651021952}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -25566,7 +25566,7 @@ PrefabInstance:
     - target: {fileID: 8575140804092506413, guid: daa376c659011e2438dd5688ca75221a, type: 3}
       propertyPath: _electricalBoard
       value: 
-      objectReference: {fileID: 0}
+      objectReference: {fileID: 651021952}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
