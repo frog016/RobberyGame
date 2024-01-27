@@ -56,7 +56,7 @@ namespace AI.States.NPC
             navMeshAgent.isStopped = false;
             
             if (Context.Movement is not NavMeshMovement)
-                Context.Movement = new NavMeshMovement(navMeshAgent, Context.Movement.Speed);
+                Context.Movement = new NavMeshMovement(Context, navMeshAgent, Context.Movement.Speed);
         }
 
         private void DisableFieldOfView()

@@ -113,5 +113,5 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _characterPrefab: {fileID: 317579919026051860, guid: a48e06d2e27478e4cba10fbbc22bd34a, type: 3}
   _characterConfig: {fileID: 11400000, guid: 233a1e9a6121c1a4eb51a3b6f1461b06, type: 2}
-  _startGunConfig: {fileID: 11400000, guid: 39859ba69144b33438b35614278d38e5, type: 2}
+  _startGunConfig: {fileID: 11400000, guid: dbd6a6f28de134b4c88774a483c815a6, type: 2}
   _patrolWay: {fileID: 2058291677150924737}

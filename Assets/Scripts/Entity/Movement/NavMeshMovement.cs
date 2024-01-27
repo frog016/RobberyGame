@@ -10,17 +10,23 @@ namespace Entity.Movement
         public event Action<Vector2> Moved;
 
         private readonly NavMeshAgent _agent;
+        private readonly ITransformable _transformable;
 
-        public NavMeshMovement(NavMeshAgent agent, float speed)
+        public NavMeshMovement(ITransformable transformable, NavMeshAgent agent, float speed)
         {
+            _transformable = transformable;
             _agent = agent;
             _agent.speed = speed;
         }
 
         public void Move(Vector2 destination)
         {
+            var direction = ((Vector3)destination - _agent.transform.position).normalized;
+
             _agent.SetDestination(destination);
-            Moved?.Invoke(((Vector3)destination - _agent.transform.position).normalized);
+            _transformable.Rotation = direction;
+
+            Moved?.Invoke(direction);
         }
     }
 }
