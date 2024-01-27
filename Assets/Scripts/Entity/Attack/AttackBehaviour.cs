@@ -1,4 +1,7 @@
-﻿using UnityEngine;
+﻿using Structure.Netcode;
+using System;
+using UnityEngine;
+using UnityEngine.Serialization;
 
 namespace Entity.Attack
 {

@@ -14,10 +14,10 @@ namespace UI.Connection
         
         private string _mapName;
 
-        public void Initialize(string mapName)
+        public void Initialize(string mapName, string mapViewName)
         {
             _mapName = mapName;
-            _mapNameText.text = _mapName;
+            _mapNameText.text = mapViewName;
 
             _selectButton.onClick.AddListener(RaiseMapSelected);
         }

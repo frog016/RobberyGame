@@ -51,6 +51,9 @@ MonoBehaviour:
   - {fileID: 11400000, guid: 0b3eb926b163a4349b3adfd0ef95e4db, type: 2}
   - {fileID: 11400000, guid: dbd6a6f28de134b4c88774a483c815a6, type: 2}
   - {fileID: 11400000, guid: 8b398e53fddaedd4ca3a98b3566e9783, type: 2}
+  _gameplayViewName: "\u041F\u0435\u0440\u0432\u043E\u0435 \u0434\u0435\u043B\u043E"
+  _map1ViewName: "\u041D\u043E\u0447\u044C \u0432 \u0431\u0430\u043D\u043A\u0435"
+  _map2ViewName: "\u0412 \u043F\u043E\u0433\u043E\u043D\u0435 \u0437\u0430 \u0434\u0435\u043D\u044C\u0433\u0430\u043C\u0438"
 --- !u!1 &8045111199903163549
 GameObject:
   m_ObjectHideFlags: 0

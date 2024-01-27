@@ -1,6 +1,6 @@
-﻿using System;
-using Entity;
+﻿using Entity;
 using Entity.Attack;
+using System;
 using UnityEngine;
 
 namespace AI.States
@@ -21,11 +21,22 @@ namespace AI.States
 
         public void Update()
         {
-            if (ActiveGun.Cooldown.IsReady == false)
-                return;
+            try
+            {
+                Context.StateMachine.GetState<WalkState>().Update();
+            }
+            catch (Exception e)
+            {
 
-            var direction = _shootDirectionProvider.Invoke();
-            ActiveGun.Shoot(direction);
+            }
+            finally
+            {
+                if (ActiveGun.Cooldown.IsReady)
+                {
+                    var direction = _shootDirectionProvider.Invoke();
+                    ActiveGun.Shoot(direction);
+                }
+            }
         }
     }
 }

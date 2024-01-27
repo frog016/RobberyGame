@@ -23,7 +23,7 @@ namespace Creation.Factory
             var cooldown = CreateCooldown(config, context.destroyCancellationToken);
             var magazine = CreateMagazine(config, context);
 
-            var gun = new Gun(cooldown, magazine);
+            var gun = new Gun(cooldown, magazine, context.destroyCancellationToken);
             gun.Initialize(config.ShootDamage, config.BulletLaunchCount, config.BulletLaunchDelay, config.ShootSpread, context.TeamId);
 
             CreateGunView(config, context);

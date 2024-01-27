@@ -17,8 +17,10 @@ namespace AI.States
         public void Enter()
         {
             Debug.Log($"Battle mode launched");
-            GameStateMachine.Instance.SetState<BattleGameState, Character>(Context);
             _input.CharacterBattleMode.Enable();
+
+            if (GameStateMachine.Instance.Current is not BattleGameState)
+                GameStateMachine.Instance.SetState<BattleGameState, Character>(Context);
 
             Ended = true;
         }

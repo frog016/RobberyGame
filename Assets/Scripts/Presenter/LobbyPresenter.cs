@@ -11,9 +11,15 @@ namespace Presenter
 {
     public class LobbyPresenter : NetworkBehaviour
     {
+        [Header("References")]
         [SerializeField] private LobbyUIPanel _lobbyPanel;
         [SerializeField] private LobbyConnectionUIPanel _connectionPanel;
         [SerializeField] private GunConfig[] _initialGunConfigs;
+
+        [Header("Data")]
+        [SerializeField] private string _gameplayViewName;
+        [SerializeField] private string _map1ViewName;
+        [SerializeField] private string _map2ViewName;
 
         private ISceneLoader _sceneLoader;
         private ConnectionManager _connectionManager;
@@ -45,7 +51,10 @@ namespace Presenter
             });
 
             _lobbyPanel.WeaponList.Initialize(_initialGunConfigs);
-            _lobbyPanel.MapList.Initialize(new string[] { SceneNames.GameplayScene, SceneNames.GameplayMap1, SceneNames.GameplayMap2 });
+            _lobbyPanel.MapList.Initialize(new[] {
+                (SceneNames.GameplayScene, _gameplayViewName),
+                (SceneNames.GameplayMap1, _map1ViewName),
+                (SceneNames.GameplayMap2, _map2ViewName) });
 
             OnWeaponSelected(_initialGunConfigs[0]);
             OnMapSelected(SceneNames.GameplayScene);

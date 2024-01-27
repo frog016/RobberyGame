@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Threading;
 using Cysharp.Threading.Tasks;
 using UnityEngine;
 using Random = UnityEngine.Random;
@@ -16,10 +17,14 @@ namespace Entity.Attack
         private float _spread;
         private TeamId _teamId;
 
-        public Gun(Cooldown cooldown, Magazine magazine)
+        private readonly CancellationToken _token;
+
+        public Gun(Cooldown cooldown, Magazine magazine, CancellationToken token)
         {
             Cooldown = cooldown;
             Magazine = magazine;
+
+            _token = token;
         }
 
         public void Initialize(int damage, int bulletLaunchCount, float bulletLaunchDelay, float spread, TeamId teamId)
@@ -63,7 +68,7 @@ namespace Entity.Attack
 
                 bullet.Launch(shootDirection, _teamId, _damage);
 
-                await UniTask.WaitForSeconds(_bulletLaunchDelay);
+                await UniTask.WaitForSeconds(_bulletLaunchDelay, cancellationToken: _token);
             }
         }
 

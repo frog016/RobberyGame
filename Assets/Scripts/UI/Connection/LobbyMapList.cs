@@ -11,12 +11,12 @@ namespace UI.Connection
 
         public event Action<string> MapSelected;
 
-        public void Initialize(IEnumerable<string> mapNames)
+        public void Initialize(IEnumerable<(string, string)> mapNames)
         {
             var viewConfigPairs = _mapViews.Zip(mapNames, Tuple.Create);
             foreach (var (weaponView, mapName) in viewConfigPairs)
             {
-                weaponView.Initialize(mapName);
+                weaponView.Initialize(mapName.Item1, mapName.Item2);
                 weaponView.MapSelected += RaiseMapSelected;
             }
         }
