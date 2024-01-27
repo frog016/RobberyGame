@@ -13,9 +13,9 @@ MonoBehaviour:
   m_Name: Uzi
   m_EditorClassIdentifier: 
   <ShootDamage>k__BackingField: 6
-  <ShootCooldown>k__BackingField: 0.15
+  <ShootCooldown>k__BackingField: 0.1
   <ShootSpread>k__BackingField: 0.2
-  <BulletLaunchCount>k__BackingField: 2
-  <BulletLaunchDelay>k__BackingField: 0.05
+  <BulletLaunchCount>k__BackingField: 1
+  <BulletLaunchDelay>k__BackingField: 0
   <ProjectilePrefab>k__BackingField: {fileID: 8298602286054986664, guid: ab4c20c69a88ecc43bc6d59dcd7619cc, type: 3}
   <MagazineCapacity>k__BackingField: 45

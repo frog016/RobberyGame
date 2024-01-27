@@ -13,8 +13,8 @@ MonoBehaviour:
   m_Name: Grenade Gun
   m_EditorClassIdentifier: 
   <ShootDamage>k__BackingField: 27
-  <ShootCooldown>k__BackingField: 0.7
-  <ShootSpread>k__BackingField: 0.5
+  <ShootCooldown>k__BackingField: 1.5
+  <ShootSpread>k__BackingField: 0.3
   <BulletLaunchCount>k__BackingField: 3
   <BulletLaunchDelay>k__BackingField: 0.15
   <ProjectilePrefab>k__BackingField: {fileID: 8298602286054986664, guid: bab66d2ea5c949d49b83eb2a6aa448ad, type: 3}

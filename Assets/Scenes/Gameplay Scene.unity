@@ -558,7 +558,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5658460348408299687, guid: 7377fb91037ea044b866967f8fac9ff0, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 0.25
+      value: 6.39
       objectReference: {fileID: 0}
     - target: {fileID: 5658460348408299687, guid: 7377fb91037ea044b866967f8fac9ff0, type: 3}
       propertyPath: m_LocalPosition.z
@@ -2477,19 +2477,19 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5611738336188586010, guid: 0238ae5e92e16ca42824104719bbc80b, type: 3}
       propertyPath: m_LocalRotation.w
-      value: 1
+      value: 0.7071068
       objectReference: {fileID: 0}
     - target: {fileID: 5611738336188586010, guid: 0238ae5e92e16ca42824104719bbc80b, type: 3}
       propertyPath: m_LocalRotation.x
-      value: -0
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 5611738336188586010, guid: 0238ae5e92e16ca42824104719bbc80b, type: 3}
       propertyPath: m_LocalRotation.y
-      value: -0
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 5611738336188586010, guid: 0238ae5e92e16ca42824104719bbc80b, type: 3}
       propertyPath: m_LocalRotation.z
-      value: -0
+      value: 0.7071068
       objectReference: {fileID: 0}
     - target: {fileID: 5611738336188586010, guid: 0238ae5e92e16ca42824104719bbc80b, type: 3}
       propertyPath: m_LocalEulerAnglesHint.x
@@ -2501,7 +2501,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5611738336188586010, guid: 0238ae5e92e16ca42824104719bbc80b, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
-      value: 0
+      value: 90
       objectReference: {fileID: 0}
     - target: {fileID: 7465990554657597591, guid: 0238ae5e92e16ca42824104719bbc80b, type: 3}
       propertyPath: _electricalBoard
