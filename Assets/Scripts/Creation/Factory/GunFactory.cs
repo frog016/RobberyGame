@@ -3,6 +3,9 @@ using Creation.Pool;
 using Entity;
 using Entity.Attack;
 using System.Threading;
+using Unity.Netcode;
+using UnityEngine;
+using Object = UnityEngine.Object;
 
 namespace Creation.Factory
 {
@@ -23,6 +26,8 @@ namespace Creation.Factory
             var gun = new Gun(cooldown, magazine);
             gun.Initialize(config.ShootDamage, config.BulletLaunchCount, config.BulletLaunchDelay, config.ShootSpread, context.TeamId);
 
+            CreateGunView(config, context);
+
             return gun;
         }
 
@@ -35,6 +40,18 @@ namespace Creation.Factory
         {
             var pool = _poolProvider.GetPool(config.ProjectilePrefab);
             return new Magazine(pool, context.Muzzle, config.MagazineCapacity);
+        }
+
+        private static void CreateGunView(GunConfig config, Character context)
+        {
+            var gunView = Object.Instantiate(config.ViewPrefab, context.transform);
+            context.Muzzle.localPosition = gunView.MuzzlePositionLocal;
+
+            gunView.Initialize(context, context.TeamId == TeamId.Player ? context.GetComponentInChildren<Camera>() : null);
+
+            var gunNetworkObject = gunView.GetComponent<NetworkObject>();
+            gunNetworkObject.SpawnWithOwnership(context.OwnerClientId, true);
+            gunNetworkObject.TrySetParent(context.transform);
         }
     }
 }

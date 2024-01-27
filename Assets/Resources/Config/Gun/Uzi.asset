@@ -19,3 +19,4 @@ MonoBehaviour:
   <BulletLaunchDelay>k__BackingField: 0
   <ProjectilePrefab>k__BackingField: {fileID: 8298602286054986664, guid: ab4c20c69a88ecc43bc6d59dcd7619cc, type: 3}
   <MagazineCapacity>k__BackingField: 45
+  <ViewPrefab>k__BackingField: {fileID: 773176931559784168, guid: e2404f3567145c743a2e03c2e6cad1e7, type: 3}

@@ -1,4 +1,5 @@
-﻿using Entity.Attack;
+﻿using Animation;
+using Entity.Attack;
 using UnityEngine;
 
 namespace Config
@@ -13,9 +14,11 @@ namespace Config
         [field: SerializeField] public int BulletLaunchCount { get; private set; }
         [field: SerializeField] public float BulletLaunchDelay { get; private set; }
 
-
         [field: Header("Magazine Data")]
         [field: SerializeField] public Projectile ProjectilePrefab { get; private set; }
         [field: SerializeField] public int MagazineCapacity { get; private set; }
+
+        [field: Header("View Data")] 
+        [field: SerializeField] public GunView ViewPrefab { get; private set; }
     }
 }
