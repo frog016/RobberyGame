@@ -422,6 +422,8 @@ GameObject:
   - component: {fileID: 1556052073486219224}
   - component: {fileID: 3203119489160321439}
   - component: {fileID: 6741991263823288667}
+  - component: {fileID: 275144300964162052}
+  - component: {fileID: 129167868217137976}
   m_Layer: 0
   m_Name: Sprite
   m_TagString: Untagged
@@ -485,8 +487,8 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 2
-  m_Sprite: {fileID: -9095717837082945937, guid: bd3cb4af8406d4436a2ae8c2aafe1f8d, type: 3}
-  m_Color: {r: 0.3370016, g: 0.9622642, b: 0.23148806, a: 1}
+  m_Sprite: {fileID: -452358704, guid: 79ad907570bf91040bd2cac09f9abfee, type: 3}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
@@ -504,7 +506,7 @@ Animator:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 7477081412681655158}
-  m_Enabled: 0
+  m_Enabled: 1
   m_Avatar: {fileID: 0}
   m_Controller: {fileID: 9100000, guid: 93ac9c9097714954eb6245ef766f4ca6, type: 2}
   m_CullingMode: 0
@@ -517,6 +519,34 @@ Animator:
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorStateOnDisable: 0
   m_WriteDefaultValuesOnDisable: 0
+--- !u!114 &275144300964162052
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7477081412681655158}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 94b5ad699bf377a4289979d03a80d3f7, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _animator: {fileID: 6741991263823288667}
+  _character: {fileID: 317579919026051860}
+--- !u!114 &129167868217137976
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7477081412681655158}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e8d0727d5ae3244e3b569694d3912374, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  TransitionStateInfoList: []
+  m_Animator: {fileID: 6741991263823288667}
 --- !u!1 &8552294396686934905
 GameObject:
   m_ObjectHideFlags: 0
@@ -660,6 +690,10 @@ PrefabInstance:
       propertyPath: _character
       value: 
       objectReference: {fileID: 317579919026051860}
+    - target: {fileID: 1029925691161932855, guid: cef9c2edb8cc6714f995c8b30e64f2b3, type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: -0.000061035156
+      objectReference: {fileID: 0}
     - target: {fileID: 1030905046473218972, guid: cef9c2edb8cc6714f995c8b30e64f2b3, type: 3}
       propertyPath: GlobalObjectIdHash
       value: 1052832055

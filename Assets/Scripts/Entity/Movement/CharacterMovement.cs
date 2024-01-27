@@ -1,4 +1,5 @@
-﻿using System.Collections.Generic;
+﻿using System;
+using System.Collections.Generic;
 using UnityEngine;
 
 namespace Entity.Movement
@@ -6,6 +7,7 @@ namespace Entity.Movement
     public class CharacterMovement : IMovement
     {
         public float Speed { get; set; }
+        public event Action<Vector2> Moved;
 
         private readonly Character _character;
         private readonly Collider2D _collider;
@@ -24,6 +26,8 @@ namespace Entity.Movement
 
             _character.Position += direction * Speed * Time.deltaTime;
             _character.Rotation = direction;
+
+            Moved?.Invoke(direction);
         }
 
         private bool HaveObstacleInDirection(Vector2 direction, float distance)
